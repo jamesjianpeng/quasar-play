@@ -6,14 +6,21 @@ import {
   Collection
 } from 'mongodb'
 import { MDB_OPTIONS } from './constants'
-import { IMdbOptions, IMdb } from './interface'
+import {
+  IMdbOptions,
+  IMdb,
+  IDbMap,
+  ICli,
+  ICliMap,
+  IColOption
+} from './interface'
 import _ from 'lodash'
 
 @Injectable()
 export class MdbService implements OnModuleInit {
   
-  private dbMap: { [key: string]: Db } = {}
-  private cliMap: { [key: string]: MongoClient } = {}
+  private dbMap: IDbMap = {}
+  private cliMap: ICliMap = {}
 
   constructor (
     @Inject(MDB_OPTIONS) private options: IMdbOptions
@@ -26,11 +33,11 @@ export class MdbService implements OnModuleInit {
   }
 
   async getClis () {
-    const clis: Array<Promise<{ key: string, url: string, cli: MongoClient }>> = this.options.map(async ({ url, key }: IMdb): Promise<{ key: string, url: string, cli: MongoClient }> => {
+    const clis: Array<Promise<ICli>> = this.options.map(async ({ url, key }: IMdb): Promise<ICli> => {
       return  { key, url, cli: await this.getCli(url) }
     })
-    const res: Array<{ key: string, url: string, cli: MongoClient }> = await Promise.all(clis)
-    const cliMap: { [key: string]: MongoClient }  = {}
+    const res: Array<ICli> = await Promise.all(clis)
+    const cliMap: ICliMap  = {}
     res.map(({ key, url, cli }) => {
       cliMap[key] = cli
     })
@@ -71,7 +78,7 @@ export class MdbService implements OnModuleInit {
     }
   }
 
-  async getCol (data:{ db: string, col: string, cliKey: string}): Promise<Collection> {
+  async getCol (data: IColOption): Promise<Collection> {
     const {db, col, cliKey } = data
     let currentDb = this.dbMap[`${cliKey}_${db}`]
     if (!currentDb) {

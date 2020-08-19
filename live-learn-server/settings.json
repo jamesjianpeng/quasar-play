@@ -1,6 +1,15 @@
 {
     "mongo_sz": "mongodb://admin:Pj-199511@120.24.146.140:27017",
     "mongo_hk": "mongodb://root:Pj-mongo-199511@47.75.157.180:27017",
-    "redis": ""
+    "redis": "",
+    "mysql_sz":{
+      "host": "120.24.146.140",
+      "port": 3306,
+      "user": "jamesjianpeng",
+      "password": "jamesjianpeng",
+      "insecureAuth": true,
+      "database": "NodeTest",
+      "path": "/"
+    }
   }
   

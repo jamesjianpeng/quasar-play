@@ -1412,8 +1412,8 @@
         "affectsGlobalScope": false
       },
       "../src/common/mdb/interface.ts": {
-        "version": "7ddadca0e830d445aba99c81d308bc5f14ab29de9883129ade3a77c9ba79c642",
-        "signature": "96e3abf7893bfab9900a73ff7393c0fae701cb87cfe68d1469b3185ce0b6a37b",
+        "version": "f60ce952dc2f32e24ef2cef73f0ebf1eb1b520efdae9159493cdc8c76bc7c144",
+        "signature": "12b5051d30e92046def638498156cc7fc215f2c2f9d8fd9de21579daea44d115",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/lodash/ts3.1/common/common.d.ts": {
@@ -1482,8 +1482,8 @@
         "affectsGlobalScope": true
       },
       "../src/common/mdb/mdbservice.ts": {
-        "version": "59bb39da2ec7731d968c04a4144bd7498f20c51d538284ef2d0903b0d7984384",
-        "signature": "33c760596453a0483eaecdbb230479d96c9fb59ec8ef405d4652ace1077808e7",
+        "version": "ac98e4bf05b88382638f13bf45276e74648e51705143cacb7be20264a28c07d6",
+        "signature": "fce5deeb211dc4575d418b050d76f6dd29d015ef1f4f69d33588499c08444225",
         "affectsGlobalScope": false
       },
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/nestjs-mdb-lib.module.d.ts": {
@@ -1517,8 +1517,8 @@
         "affectsGlobalScope": false
       },
       "../settings.json": {
-        "version": "96b3d52115606a921df610212771600fba231791d7d7194891b3f9993b35c496",
-        "signature": "c0d7ce5e0f90c947b9d12fe8846dae0725baedad433ba69c4d798ae6412e38a4",
+        "version": "f0ee0cdce796b017aaa599bd3dc4d29664a3ac823bf10bb720110b3c1299cffd",
+        "signature": "01c71a7dd9ce8e6399a27e79ab6f4bb2f11b81d7f96cbeada0352483344435d6",
         "affectsGlobalScope": true
       },
       "../src/app.module.ts": {
@@ -5017,8 +5017,8 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/common/mdb/interface.ts": [
+        "../node_modules/@types/mongodb/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/os.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
@@ -8123,6 +8123,9 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
         "../src/common/mdb/mdbservice.ts"
+      ],
+      "../src/common/mdb/interface.ts": [
+        "../node_modules/@types/mongodb/index.d.ts"
       ],
       "../src/common/mdb/mdbmodule.ts": [
         "../node_modules/@nestjs/common/index.d.ts",

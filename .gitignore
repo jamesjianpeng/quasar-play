@@ -1,6 +1,6 @@
 # server
-settings.json
-
+/live-learn-server/settings.json
+/live-learn-server/dist
 .DS_Store
 .thumbs.db
 node_modules
