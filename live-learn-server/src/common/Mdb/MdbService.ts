@@ -7,6 +7,7 @@ import {
 } from 'mongodb'
 import { MDB_OPTIONS } from './constants'
 import { IMdbOptions, IMdb } from './interface'
+import _ from 'lodash'
 
 @Injectable()
 export class MdbService implements OnModuleInit {
@@ -21,7 +22,6 @@ export class MdbService implements OnModuleInit {
   }
 
   onModuleInit () {
-    console.log('module init mdb', this.options)
     return this.options
   }
 
@@ -30,7 +30,6 @@ export class MdbService implements OnModuleInit {
       return  { key, url, cli: await this.getCli(url) }
     })
     const res: Array<{ key: string, url: string, cli: MongoClient }> = await Promise.all(clis)
-    console.log(res)
     const cliMap: { [key: string]: MongoClient }  = {}
     res.map(({ key, url, cli }) => {
       cliMap[key] = cli
@@ -53,7 +52,7 @@ export class MdbService implements OnModuleInit {
     const currentDb = this.dbMap[`${cliKey}_${db}`]
     const currentCli = this.cliMap[cliKey]
     if (!currentCli) {
-      const cliItem = this.options.find(({ key }) => key === cliKey) || { url: '' }
+      const cliItem = _.find(this.options, ({ key }) => key === cliKey) || { url: '' } // this.options.find(({ key }) => key === cliKey) || { url: '' }
       if (cliItem.url) {
         this.cliMap[cliKey] = await this.getCli(cliItem.url)
       } else {

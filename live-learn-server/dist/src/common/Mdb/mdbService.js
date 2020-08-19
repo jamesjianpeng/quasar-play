@@ -11,11 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MdbService = void 0;
 const common_1 = require("@nestjs/common");
 const mongodb_1 = require("mongodb");
 const constants_1 = require("./constants");
+const lodash_1 = __importDefault(require("lodash"));
 let MdbService = class MdbService {
     constructor(options) {
         this.options = options;
@@ -24,7 +28,6 @@ let MdbService = class MdbService {
         this.getClis();
     }
     onModuleInit() {
-        console.log('module init mdb', this.options);
         return this.options;
     }
     async getClis() {
@@ -32,7 +35,6 @@ let MdbService = class MdbService {
             return { key, url, cli: await this.getCli(url) };
         });
         const res = await Promise.all(clis);
-        console.log(res);
         const cliMap = {};
         res.map(({ key, url, cli }) => {
             cliMap[key] = cli;
@@ -53,7 +55,7 @@ let MdbService = class MdbService {
         const currentDb = this.dbMap[`${cliKey}_${db}`];
         const currentCli = this.cliMap[cliKey];
         if (!currentCli) {
-            const cliItem = this.options.find(({ key }) => key === cliKey) || { url: '' };
+            const cliItem = lodash_1.default.find(this.options, ({ key }) => key === cliKey) || { url: '' };
             if (cliItem.url) {
                 this.cliMap[cliKey] = await this.getCli(cliItem.url);
             }

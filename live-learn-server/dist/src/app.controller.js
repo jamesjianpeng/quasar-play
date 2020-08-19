@@ -19,6 +19,12 @@ let AppController = class AppController {
     getHello() {
         return this.appService.getHello();
     }
+    testMdb() {
+        return this.appService.testMdb();
+    }
+    testLib() {
+        return this.appService.testLib();
+    }
 };
 __decorate([
     common_1.Get(),
@@ -26,6 +32,18 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getHello", null);
+__decorate([
+    common_1.Get('/testMdb'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "testMdb", null);
+__decorate([
+    common_1.Get('/testLib'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "testLib", null);
 AppController = __decorate([
     common_1.Controller(),
     __metadata("design:paramtypes", [app_service_1.AppService])

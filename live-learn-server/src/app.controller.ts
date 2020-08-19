@@ -9,4 +9,14 @@ export class AppController {
   getHello() {
     return this.appService.getHello();
   }
+
+  @Get('/testMdb')
+  testMdb() {
+    return this.appService.testMdb();
+  }
+
+  @Get('/testLib')
+  testLib() {
+    return this.appService.testLib();
+  }
 }
