@@ -11,21 +11,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
-const MdbService_1 = require("./common/Mdb/MdbService");
-const dist_1 = require("@smartblog/nestjs-mdb-lib/dist");
+const nestjs_mdb_lib_1 = require("@smartblog/nestjs-mdb-lib");
 let AppService = class AppService {
-    constructor(MdbService, nestjsMdbLibService) {
-        this.MdbService = MdbService;
+    constructor(nestjsMdbLibService) {
         this.nestjsMdbLibService = nestjsMdbLibService;
     }
     onModuleInit() {
     }
     async test() {
         const data = { cliKey: 'sz', db: 'ghost-live&learn', col: 'subject_sz' };
-        const col = await this.MdbService.getCol(data);
+        const col = await this.nestjsMdbLibService.getCol(data);
         await col.insertOne({ subject: '数据库概率', code: '02323' });
         const dd = { cliKey: 'hk', db: 'ghost-live&learn', col: 'subject_hk' };
-        const colHk = await this.MdbService.getCol(dd);
+        const colHk = await this.nestjsMdbLibService.getCol(dd);
         return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray() });
     }
     async getHello() {
@@ -40,8 +38,7 @@ let AppService = class AppService {
 };
 AppService = __decorate([
     common_1.Injectable(),
-    __metadata("design:paramtypes", [MdbService_1.MdbService,
-        dist_1.NestjsMdbLibService])
+    __metadata("design:paramtypes", [nestjs_mdb_lib_1.NestjsMdbLibService])
 ], AppService);
 exports.AppService = AppService;
 //# sourceMappingURL=app.service.js.map

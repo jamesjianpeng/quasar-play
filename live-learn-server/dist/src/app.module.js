@@ -13,19 +13,17 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const MdbModule_1 = require("./common/Mdb/MdbModule");
 const settings_json_1 = __importDefault(require("../settings.json"));
-const dist_1 = require("@smartblog/nestjs-mdb-lib/dist");
+const nestjs_mdb_lib_1 = require("@smartblog/nestjs-mdb-lib");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
-            MdbModule_1.MdbModule.register([
+            nestjs_mdb_lib_1.NestjsMdbLibModule.register([
                 { url: settings_json_1.default.mongo_sz, key: 'sz' },
                 { url: settings_json_1.default.mongo_hk, key: 'hk' }
-            ]),
-            dist_1.NestjsMdbLibModule
+            ])
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

@@ -23,7 +23,7 @@
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
     "@nestjs/platform-express": "^6.7.2",
-    "@smartblog/nestjs-mdb-lib": "^1.0.8",
+    "@smartblog/nestjs-mdb-lib": "^1.0.13",
     "lodash": "^4.17.20",
     "mongodb": "^3.5.9",
     "reflect-metadata": "^0.1.13",
