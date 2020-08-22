@@ -16,7 +16,6 @@ let AppService = class AppService {
     constructor(nestjsMdbLibService) {
         this.nestjsMdbLibService = nestjsMdbLibService;
     }
-    onModuleInit() { }
     async test() {
         const data = { cliKey: 'sz', db: 'ghost-live&learn', col: 'subject_sz' };
         const col = await this.nestjsMdbLibService.getCol(data);

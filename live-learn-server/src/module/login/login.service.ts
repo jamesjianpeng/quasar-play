@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
 @Injectable()
-export class AppService {
+export class LoginService {
   constructor(
     private nestjsMdbLibService: NestjsMdbLibService,
   ) {}
@@ -17,15 +17,11 @@ export class AppService {
     return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray()});
   }
 
-  async getHello() {
+  async login() {
     return 'Hello World!';
   }
 
-  async testLib() {
+  async logout() {
     return this.nestjsMdbLibService.test();
-  }
-
-  async testMdb() {
-    return await this.test();
   }
 }

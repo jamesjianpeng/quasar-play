@@ -2392,33 +2392,33 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/src/interface.d.ts": {
-        "version": "12b5051d30e92046def638498156cc7fc215f2c2f9d8fd9de21579daea44d115",
-        "signature": "12b5051d30e92046def638498156cc7fc215f2c2f9d8fd9de21579daea44d115",
+        "version": "8d0ba6a0a0adb554f74f9fe2eb1343255ff0382c71c0ebafca6f9df16a20bd8f",
+        "signature": "8d0ba6a0a0adb554f74f9fe2eb1343255ff0382c71c0ebafca6f9df16a20bd8f",
         "affectsGlobalScope": false
       },
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/src/nestjs-mdb-lib.module.d.ts": {
-        "version": "09a4465f1ecb2bb0c43aeadc56cc52dfbc1412d79bdda1d54e2f2616d5a2c5a1",
-        "signature": "09a4465f1ecb2bb0c43aeadc56cc52dfbc1412d79bdda1d54e2f2616d5a2c5a1",
+        "version": "3141073ba2cb708092364f53c3788a24f4dca96ccee72ec179db2d3d4e93008f",
+        "signature": "3141073ba2cb708092364f53c3788a24f4dca96ccee72ec179db2d3d4e93008f",
         "affectsGlobalScope": false
       },
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/src/nestjs-mdb-lib.service.d.ts": {
-        "version": "d4ec706558c41acd17ae3dcb6d0800d62373bea199e8211cd504a2614278de7b",
-        "signature": "d4ec706558c41acd17ae3dcb6d0800d62373bea199e8211cd504a2614278de7b",
+        "version": "9cc8fb637fc5c7333142aefc1c7eb5512ea2514aff3f81c05d2f27a5301d6b32",
+        "signature": "9cc8fb637fc5c7333142aefc1c7eb5512ea2514aff3f81c05d2f27a5301d6b32",
         "affectsGlobalScope": false
       },
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/src/index.d.ts": {
-        "version": "5a1c0cf727f2ae1f00bb38d03eaf3032c76c74f4614d581e6f259b1bce1029b2",
-        "signature": "5a1c0cf727f2ae1f00bb38d03eaf3032c76c74f4614d581e6f259b1bce1029b2",
+        "version": "17ef7357559e22725027868f7720551017fffd9e9a04d4548e77e523408a5307",
+        "signature": "17ef7357559e22725027868f7720551017fffd9e9a04d4548e77e523408a5307",
         "affectsGlobalScope": false
       },
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts": {
-        "version": "7140b8805c82c586de623a73531cd35ff1d79ea051c39d56fcbfc17256e840f7",
-        "signature": "7140b8805c82c586de623a73531cd35ff1d79ea051c39d56fcbfc17256e840f7",
+        "version": "80a3bbe0e4fdfaac2c0a8b92a3ed66d3ded5e8f454c5790c8d593872fc1197f1",
+        "signature": "80a3bbe0e4fdfaac2c0a8b92a3ed66d3ded5e8f454c5790c8d593872fc1197f1",
         "affectsGlobalScope": false
       },
       "../src/app.service.ts": {
-        "version": "1d3fcd7f93c171e89ce7f6fc80dfba41f88789b3a634735fe07374faceeaabf3",
-        "signature": "86b480b0e9ed5e4d6edbe8618f7f2680d737797b9ceb6d8b7229cac41a5ff92a",
+        "version": "f7e5afedc1280fb580d314943b6a421e3bd60a931c06e972174d3f35a84f18c7",
+        "signature": "e3a58f5475392c2763291050f8afa14fb1ec25773e41764f69ff4605d04ecf52",
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
@@ -2426,13 +2426,33 @@
         "signature": "d630bf65af8bf194bd4b5ea310b5e5bdc240c1a563e9a3b88928fab9cb705873",
         "affectsGlobalScope": false
       },
+      "../src/module/login/login.service.ts": {
+        "version": "069b4f51f8e4ab4c18d5047736388b2076a47e17f76f14ef16953a05344021d6",
+        "signature": "56b185015403495245336df76b924cd3a81ea6e00cd6bf0ba599afbe1efb2b00",
+        "affectsGlobalScope": false
+      },
+      "../src/module/login/login.controller.ts": {
+        "version": "0eecceb567e088825c93b2a4732de75557c8f7b7f618e61b0310043874b01b79",
+        "signature": "3f8845ec5320b72b572d246979d89b506b90e8424eab73b136e51a6ce10360f3",
+        "affectsGlobalScope": false
+      },
+      "../src/module/login/login.module.ts": {
+        "version": "50fc25b20b88aeb9a3575a5e3d761dcdb80490510dc940a23f9c789f2d14bef2",
+        "signature": "7d2c312d4cd4539930e18319eea2c2d827a57c4b476c904069f8272ad1f74047",
+        "affectsGlobalScope": false
+      },
       "../settings.json": {
         "version": "f0ee0cdce796b017aaa599bd3dc4d29664a3ac823bf10bb720110b3c1299cffd",
         "signature": "01c71a7dd9ce8e6399a27e79ab6f4bb2f11b81d7f96cbeada0352483344435d6",
         "affectsGlobalScope": true
       },
+      "../src/core/common.module.ts": {
+        "version": "1611506b5538ca7b1660805177c3ecba4ffe0c32dc50c92d611ccf59ed8729a4",
+        "signature": "7214164cfa10573d2bf79da5174719e21aa58d3745730ba5464fd4491e9d5c6c",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "d7a8ac57cd8ee9c4d33fff83d682a938ec1d163aece2761f37f7ff7adebbc7d5",
+        "version": "68ca3aef8412933e4cbb3ea27c239e70ff8f3d4daf42929a08828f671e0900c6",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -7614,14 +7634,14 @@
       ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../settings.json",
         "../src/app.controller.ts",
-        "../src/app.service.ts"
+        "../src/app.service.ts",
+        "../src/core/common.module.ts",
+        "../src/module/login/login.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7631,6 +7651,15 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/core/common.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../settings.json"
+      ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -7638,6 +7667,31 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/app.module.ts"
+      ],
+      "../src/module/login/login.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/module/login/login.service.ts"
+      ],
+      "../src/module/login/login.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/module/login/login.controller.ts",
+        "../src/module/login/login.service.ts"
+      ],
+      "../src/module/login/login.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -12355,7 +12409,12 @@
         "../src/app.service.ts"
       ],
       "../src/app.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts"
+      ],
+      "../src/module/login/login.controller.ts": [
+        "../src/module/login/login.service.ts"
+      ],
+      "../src/module/login/login.service.ts": [
         "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts"
       ]
     },
@@ -12933,7 +12992,11 @@
       "../src/app.controller.ts",
       "../src/app.module.ts",
       "../src/app.service.ts",
-      "../src/main.ts"
+      "../src/core/common.module.ts",
+      "../src/main.ts",
+      "../src/module/login/login.controller.ts",
+      "../src/module/login/login.module.ts",
+      "../src/module/login/login.service.ts"
     ]
   },
   "version": "3.9.7"
