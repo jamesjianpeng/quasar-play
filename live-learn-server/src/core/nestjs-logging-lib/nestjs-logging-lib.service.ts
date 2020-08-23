@@ -82,6 +82,12 @@ export class NestjsLoggingLibService {
     return logger[level](text);
   }
 
+  addLog(opt: ILoggingCreateOption): winston.Logger {
+    this.loggerOptions.push(opt);
+    this.loggingMap[opt.level] = this.createLogger(opt);
+    return this.loggingMap[opt.level];
+  }
+
   async test() {
     return 'nestjs loggint lib';
   }
