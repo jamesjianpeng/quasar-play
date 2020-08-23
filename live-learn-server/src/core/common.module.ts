@@ -2,7 +2,7 @@ import { Module, Global } from '@nestjs/common';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import settings from '../../settings.json';
 import { NestjsMdbLibModule } from '@smartblog/nestjs-mdb-lib';
-import { NestjsLoggintLibModule } from './nestjs-logging-lib';
+import { NestjsLoggintLibModule } from './nestjs-winston-logging-lib';
 import { LoggingInterceptor } from './logging.interceptor';
 @Global()
 @Module({

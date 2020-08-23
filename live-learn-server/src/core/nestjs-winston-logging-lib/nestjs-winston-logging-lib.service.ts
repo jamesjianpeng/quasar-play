@@ -1,22 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { ILOGGLING_OPTION } from './constans';
+import { ILOGGLING_OPTION, commonConfig } from './constans';
 import { ILoggingOptions, ILoggingCreateOptions, ILoggingCreateOption, ILog } from './interface';
-import winston, { format } from 'winston';
-
-const serviceName = 'service';
-
-const commonConfig = {
-  format: format.combine(
-    format.timestamp({
-      format: 'YYYY-MM-DD HH:mm:ss',
-    }),
-    format.simple(),
-  ),
-  defaultMeta: { service: serviceName },
-  transports: [
-    new winston.transports.File({ filename: 'info.log' }),
-  ],
-};
+import winston from 'winston';
 
 @Injectable()
 export class NestjsLoggingLibService {

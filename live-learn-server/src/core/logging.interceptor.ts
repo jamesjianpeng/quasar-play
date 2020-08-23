@@ -2,7 +2,7 @@ import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nes
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import winston, { format } from 'winston';
-import { NestjsLoggingLibService } from './nestjs-logging-lib';
+import { NestjsLoggingLibService } from './nestjs-winston-logging-lib';
 
 const serviceName = 'service';
 

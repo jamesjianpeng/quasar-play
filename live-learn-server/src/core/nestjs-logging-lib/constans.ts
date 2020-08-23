@@ -1,1 +1,0 @@
-export const ILOGGLING_OPTION = 'ILOGGLING_OPTION';

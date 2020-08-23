@@ -1,7 +1,7 @@
 import { Module, DynamicModule } from '@nestjs/common';
 import { ILOGGLING_OPTION } from './constans';
 import { ILoggingOptions } from './interface';
-import { NestjsLoggingLibService } from './nestjs-logging-lib.service';
+import { NestjsLoggingLibService } from './nestjs-winston-logging-lib.service';
 
 @Module({
   providers: [NestjsLoggingLibService],
