@@ -1,9 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
+import { NestjsLoggerLibService } from './core/nestjs-logger-lib';
 @Injectable()
 export class AppService {
   constructor(
     private nestjsMdbLibService: NestjsMdbLibService,
+    private nestjsLoggerLibService: NestjsLoggerLibService,
   ) {}
 
   async test() {
@@ -18,6 +20,7 @@ export class AppService {
   }
 
   async getHello() {
+    this.nestjsLoggerLibService.log('hello', new Date().getTime().toString());
     return 'Hello World!';
   }
 
