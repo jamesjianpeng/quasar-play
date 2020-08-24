@@ -1,11 +1,11 @@
 import { Module, DynamicModule } from '@nestjs/common';
 import { ILOGGLING_OPTION } from './constans';
 import { ILoggingOptions } from './interface';
-import { NestjsLoggingLibService } from './nestjs-winston-logging-lib.service';
+import { NestjsWinstonLoggingLibService } from './nestjs-winston-logging-lib.service';
 
 @Module({
-  providers: [NestjsLoggingLibService],
-  exports: [NestjsLoggingLibService],
+  providers: [NestjsWinstonLoggingLibService],
+  exports: [NestjsWinstonLoggingLibService],
 })
 export class NestjsLoggintLibModule {
   static register(options: ILoggingOptions): DynamicModule {
@@ -16,9 +16,9 @@ export class NestjsLoggintLibModule {
           provide: ILOGGLING_OPTION,
           useValue: options,
         },
-        NestjsLoggingLibService,
+        NestjsWinstonLoggingLibService,
       ],
-      exports: [NestjsLoggingLibService],
+      exports: [NestjsWinstonLoggingLibService],
     };
   }
 }

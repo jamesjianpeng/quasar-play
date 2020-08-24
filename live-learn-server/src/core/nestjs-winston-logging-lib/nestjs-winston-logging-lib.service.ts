@@ -4,7 +4,7 @@ import { ILoggingOptions, ILoggingCreateOptions, ILoggingCreateOption, ILog } fr
 import winston from 'winston';
 
 @Injectable()
-export class NestjsLoggingLibService {
+export class NestjsWinstonLoggingLibService {
   private loggerOptions: ILoggingCreateOptions = [
     {
       level: 'info',

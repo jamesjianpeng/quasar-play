@@ -2,7 +2,7 @@ import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nes
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import winston, { format } from 'winston';
-import { NestjsLoggingLibService } from './nestjs-winston-logging-lib';
+import { NestjsWinstonLoggingLibService } from './nestjs-winston-logging-lib';
 
 const serviceName = 'service';
 
@@ -26,14 +26,14 @@ const logger = winston.createLogger({
 @Injectable()
 export class LoggingInterceptor implements NestInterceptor {
   constructor(
-     private nestjsLoggingLibService: NestjsLoggingLibService,
+     private nestjsWinstonLoggingLibService: NestjsWinstonLoggingLibService,
   ) {
 
   }
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     console.log('Before...');
-    this.nestjsLoggingLibService.log({ level: 'info', text: 'Before...' });
+    this.nestjsWinstonLoggingLibService.log({ level: 'info', text: 'Before...' });
 
     const now = Date.now();
     return next
