@@ -13,10 +13,13 @@
             </q-form>
           </q-card-section>
           <q-card-actions class="q-px-md">
-            <q-btn unelevated color="light-green-7" size="lg" class="full-width" label="Login" />
+            <q-btn unelevated color="light-green-7" @click="login" size="lg" class="full-width" label="Login" />
           </q-card-actions>
           <q-card-section class="text-center q-pa-none">
-            <p class="text-grey-6">Not reigistered? Created an Account</p>
+            <p class="text-grey-6">Not reigistered? Created an Account </p>
+          </q-card-section>
+          <q-card-section class="text-center q-pa-none">
+            <p class="text-grey-6">{{gettersTest}}</p>
           </q-card-section>
         </q-card>
       </div>
@@ -25,12 +28,27 @@
 </template>
 
 <script>
+import { mapActions, mapGetters, mapState } from 'vuex'
 export default {
   name: 'Login',
   data () {
     return {
       email: '',
       password: ''
+    }
+  },
+  computed: {
+    ...mapGetters('login', ['gettersTest']),
+    ...mapState('login', ['stateTest'])
+  },
+  methods: {
+    ...mapActions([
+      'login/actionsTest'
+    ]),
+    login () {
+      console.log(this.stateTest)
+      const gettersTest = this.gettersTest ? this.gettersTest + '1' : ''
+      this['login/actionsTest']({ test: `hi ${gettersTest}` })
     }
   }
 }
