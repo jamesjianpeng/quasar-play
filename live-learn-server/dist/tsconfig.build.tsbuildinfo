@@ -2416,9 +2416,19 @@
         "signature": "80a3bbe0e4fdfaac2c0a8b92a3ed66d3ded5e8f454c5790c8d593872fc1197f1",
         "affectsGlobalScope": false
       },
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts": {
+        "version": "e35d49140ad0a69115e8038d4f6c5b4fb1c6c408cc020d0e295275cdc00b5723",
+        "signature": "9dc02c4f79909be1c27043fe49aada85f9be2b55f83b36f4ee67556f4c0e30c5",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-logger-lib/index.ts": {
+        "version": "59823b954eeb7fe1bb2c6aadaf6a8bfa1427171ba0ab844c8927a3b11cf3b784",
+        "signature": "59823b954eeb7fe1bb2c6aadaf6a8bfa1427171ba0ab844c8927a3b11cf3b784",
+        "affectsGlobalScope": false
+      },
       "../src/app.service.ts": {
-        "version": "f7e5afedc1280fb580d314943b6a421e3bd60a931c06e972174d3f35a84f18c7",
-        "signature": "e3a58f5475392c2763291050f8afa14fb1ec25773e41764f69ff4605d04ecf52",
+        "version": "3e0a136ee9cebb8803a45d98650c732dd9d66f2a66aa5c16c7fe88f1a804b28d",
+        "signature": "ca9b22d7a79a111a377fadd5f8251815af06939e1bdd5f8945d36a6540e21bc3",
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
@@ -2662,12 +2672,12 @@
         "affectsGlobalScope": false
       },
       "../src/core/nestjs-winston-logging-lib/nestjs-winston-logging-lib.service.ts": {
-        "version": "ac2a018d14d9e8827399cae4024c8adbee80363a8d7f510ea5ccabade9c4e790",
-        "signature": "171744895ec070289b001ec06bc2944437e60ce093b14106ea240916e76da19a",
+        "version": "d285a7032654bf18cbee92f5adb2285c9a12071e76b3bf2cb0536136e12b3caf",
+        "signature": "cece1a86c166573cb949a2ce730354728f72258de8a966c47766d3b2807a286e",
         "affectsGlobalScope": false
       },
       "../src/core/nestjs-winston-logging-lib/nestjs-winston-logging-lib.module.ts": {
-        "version": "9bcb067835cca2e98538a0a6f8798a77f4991276d58dde5e4889e47c11cebbb7",
+        "version": "18edcb2678652a5dba59fb99b8694c898b3ef6893d786ff459758fc2e480cf72",
         "signature": "1894bba9696c32e9785c99ebcc231a37621cc592b8b481d801bb83d33594c202",
         "affectsGlobalScope": false
       },
@@ -3192,12 +3202,12 @@
         "affectsGlobalScope": false
       },
       "../src/core/logging.interceptor.ts": {
-        "version": "aa508e491955739b00dce62b7fcf2b8d14f30bb69b28f7d8ca1712d39fd142bc",
-        "signature": "6633953a51d3b5aaeb51a01453bdf6e577613f39fafce80d91fcc848c360d81e",
+        "version": "8e694a26e6d247fa82bbcc732a2982fb55029124da2154a73b4e93d4f464e9f0",
+        "signature": "d4ce9c8628b9becc5a191e9e05bf9facbc5d4cde1b420740fa0ce1ac9a489f6a",
         "affectsGlobalScope": false
       },
       "../src/core/common.module.ts": {
-        "version": "8a47f5cae4d4aaeecb4ef2f05ce17d65247f8f7c782bf2d340951dd1a7141b00",
+        "version": "d796c1e51fe592f6dddeaa9db3f4e9b52efabea8c10aaabec220034e86712ec6",
         "signature": "7214164cfa10573d2bf79da5174719e21aa58d3745730ba5464fd4491e9d5c6c",
         "affectsGlobalScope": false
       },
@@ -3207,8 +3217,23 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "e361415b67a429124c5fcc8a9fc9e5c0607d9e75209cd9fe9917618a2d2545f1",
+        "version": "9c8bd0f0d54985476cf3c889ada262948f1e102f6b7e059fdca0901ad9476578",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-logger-lib/constants.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-logger-lib/interface.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.module.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -9153,7 +9178,8 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../src/core/nestjs-logger-lib/index.ts"
       ],
       "../src/core/common.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -9165,6 +9191,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../settings.json",
         "../src/core/logging.interceptor.ts",
+        "../src/core/nestjs-logger-lib/index.ts",
         "../src/core/nestjs-winston-logging-lib/index.ts"
       ],
       "../src/core/logging.interceptor.ts": [
@@ -9177,6 +9204,38 @@
         "../node_modules/rxjs/operators/index.d.ts",
         "../node_modules/winston/index.d.ts",
         "../src/core/nestjs-winston-logging-lib/index.ts"
+      ],
+      "../src/core/nestjs-logger-lib/constants.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/core/nestjs-logger-lib/index.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts"
+      ],
+      "../src/core/nestjs-logger-lib/interface.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.module.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ],
       "../src/core/nestjs-winston-logging-lib/constans.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -14903,12 +14962,16 @@
         "../src/app.service.ts"
       ],
       "../src/app.service.ts": [
-        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts"
+        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
+        "../src/core/nestjs-logger-lib/index.ts"
       ],
       "../src/core/logging.interceptor.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/core/nestjs-winston-logging-lib/index.ts"
+      ],
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/core/nestjs-winston-logging-lib/constans.ts": [
         "../node_modules/winston/index.d.ts"
@@ -15619,6 +15682,11 @@
       "../src/app.service.ts",
       "../src/core/common.module.ts",
       "../src/core/logging.interceptor.ts",
+      "../src/core/nestjs-logger-lib/constants.ts",
+      "../src/core/nestjs-logger-lib/index.ts",
+      "../src/core/nestjs-logger-lib/interface.ts",
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.module.ts",
+      "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts",
       "../src/core/nestjs-winston-logging-lib/constans.ts",
       "../src/core/nestjs-winston-logging-lib/index.ts",
       "../src/core/nestjs-winston-logging-lib/interface.ts",

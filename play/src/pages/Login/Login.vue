@@ -43,12 +43,14 @@ export default {
   },
   methods: {
     ...mapActions([
-      'login/actionsTest'
+      'login/actionsTest',
+      'login/testApi'
     ]),
     login () {
       console.log(this.stateTest)
       const gettersTest = this.gettersTest ? this.gettersTest + '1' : ''
       this['login/actionsTest']({ test: `hi ${gettersTest}` })
+      this['login/testApi']({ test: `hi ${gettersTest}` })
     }
   }
 }

@@ -1,7 +1,9 @@
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
+import { NestjsLoggerLibService } from './core/nestjs-logger-lib';
 export declare class AppService {
     private nestjsMdbLibService;
-    constructor(nestjsMdbLibService: NestjsMdbLibService);
+    private nestjsLoggerLibService;
+    constructor(nestjsMdbLibService: NestjsMdbLibService, nestjsLoggerLibService: NestjsLoggerLibService);
     test(): Promise<{
         hk: any[];
         sz: any[];

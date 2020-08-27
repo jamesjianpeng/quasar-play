@@ -12,9 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
 const nestjs_mdb_lib_1 = require("@smartblog/nestjs-mdb-lib");
+const nestjs_logger_lib_1 = require("./core/nestjs-logger-lib");
 let AppService = class AppService {
-    constructor(nestjsMdbLibService) {
+    constructor(nestjsMdbLibService, nestjsLoggerLibService) {
         this.nestjsMdbLibService = nestjsMdbLibService;
+        this.nestjsLoggerLibService = nestjsLoggerLibService;
     }
     async test() {
         const data = { cliKey: 'sz', db: 'ghost-live&learn', col: 'subject_sz' };
@@ -25,6 +27,7 @@ let AppService = class AppService {
         return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray() });
     }
     async getHello() {
+        this.nestjsLoggerLibService.log('hello', new Date().getTime().toString());
         return 'Hello World!';
     }
     async testLib() {
@@ -36,7 +39,8 @@ let AppService = class AppService {
 };
 AppService = __decorate([
     common_1.Injectable(),
-    __metadata("design:paramtypes", [nestjs_mdb_lib_1.NestjsMdbLibService])
+    __metadata("design:paramtypes", [nestjs_mdb_lib_1.NestjsMdbLibService,
+        nestjs_logger_lib_1.NestjsLoggerLibService])
 ], AppService);
 exports.AppService = AppService;
 //# sourceMappingURL=app.service.js.map
