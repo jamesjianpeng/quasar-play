@@ -1,1 +1,1 @@
-export const UPLOAD_FILE_QUEUE = 'smartBlog:uploadFile';
+export const UPLOAD_FILE_QUEUE = 'smartBlogUploadFile';

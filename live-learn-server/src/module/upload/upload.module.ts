@@ -11,12 +11,11 @@ import { UPLOAD_FILE_QUEUE } from './constants';
       redis: {
         host: 'localhost',
         port: 6379,
-        db: 1,
+        db: 2,
       },
     }),
   ],
   controllers: [UploadController],
   providers: [UploadService, UploadProcessor],
-  exports: [UploadService, UploadProcessor],
 })
 export class UploadModule {}

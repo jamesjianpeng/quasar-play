@@ -3212,8 +3212,8 @@
         "affectsGlobalScope": false
       },
       "../src/module/upload/constants.ts": {
-        "version": "4ea89ff29a4a2a8ba578bf50a49575e3146ef41173920971d346d7609f3826a3",
-        "signature": "9624dd27d7f478a98b7431b0f9627e1da851c1c6341a3a9b0b5eae965c0424bc",
+        "version": "c93b0a02710e44a76c1e04663a7d6aa163df4eee4a0c8b1176a1cbcda70ad98d",
+        "signature": "8a232e69edff9ffc3d509ce7d629ff38329cebcfa31d46f4647c05a89302a54a",
         "affectsGlobalScope": false
       },
       "../src/module/upload/interface.ts": {
@@ -3327,22 +3327,37 @@
         "affectsGlobalScope": false
       },
       "../src/module/upload/upload.controller.ts": {
-        "version": "c94ba438a0ad570cf9f55993cb86ed88926534cdc77b373ed344c1fd0b96ace3",
-        "signature": "40d1c8e5ebd6166cf032e280487ba73bead97d6db4206804067d5fef3122cf4c",
+        "version": "9e83fefd38214a0f21dc323bb16dfd3588dc9618a9bf313d257344d375f744b6",
+        "signature": "4e1cf1075fd2d8634a415fe7f7668ef5ced8b3526b2b7fcd1ea170b755e2123f",
         "affectsGlobalScope": false
       },
       "../src/module/upload/upload.processor.ts": {
-        "version": "ffb8a10b27179b1afb3d41314b6380265449ca48cc54e4e2db00566255c5bb63",
-        "signature": "b2dc50e52fd28ccf985f5e3a6463c590f79e5c2825314fc44c15e074f8b25b06",
+        "version": "64a983f3ea5cca4c577bbeff71130a851b0dae5f5a6853800432df47bd9f2af5",
+        "signature": "163cfdeb1e5fd230c0a50e59abbddfd3785b9d674353eb77784971f76915ddde",
         "affectsGlobalScope": false
       },
       "../src/module/upload/upload.module.ts": {
-        "version": "4abb066a12b69b5960c1e1c5fbe8ca8a48ba76008ad5fee3c3b6a9c3fbb357a7",
+        "version": "b87be27e605d0d50b2f3a807387efdb72b1f847aa436815cd47a4670ca3c3de3",
         "signature": "b5e94c01a086c2c0bdc1098fa2e4b7b1003a2cd5116062d4ed00cd2a8fbd84fb",
         "affectsGlobalScope": false
       },
+      "../src/module/audio/audio.controller.ts": {
+        "version": "b98ebec9c152822dfbdc5bd97fb3cee64771e55bcf5fee51a446d727897138da",
+        "signature": "abf650e1d4acd7bb7bafbe4561eae29ade614f008391b66d4c30f012575a514b",
+        "affectsGlobalScope": false
+      },
+      "../src/module/audio/audio.processor.ts": {
+        "version": "ec5fd0c1299e6f03d111f3421445fc0f98917da9bd716baf83ec68924c14cb96",
+        "signature": "7b7451e48a7853b7dcf67139330305d5e9ed08316dd756a633c7148a4a77f1ad",
+        "affectsGlobalScope": false
+      },
+      "../src/module/audio/audio.module.ts": {
+        "version": "b90cd3f6776177f853e5ea1b3fb70670746c8f1dbc3f126f9670d018fa2b8883",
+        "signature": "22dee3be1e3a01aa3891571e0a2f6499c368db0d93df3e1a30a44587e476111e",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "ca0e5522705cd72bc6c63395112e6895498e5693c433a851f2750053916956ec",
+        "version": "16cdcee47618871032f3c846fab81b388b94bf8dc4e6ac7287206e86872d6147",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -9451,6 +9466,7 @@
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/core/common.module.ts",
+        "../src/module/audio/audio.module.ts",
         "../src/module/login/login.module.ts",
         "../src/module/upload/upload.module.ts"
       ],
@@ -9569,6 +9585,34 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/app.module.ts"
       ],
+      "../src/module/audio/audio.controller.ts": [
+        "../node_modules/@nestjs/bull/dist/index.d.ts",
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/bull/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/module/audio/audio.module.ts": [
+        "../node_modules/@nestjs/bull/dist/index.d.ts",
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/module/audio/audio.controller.ts",
+        "../src/module/audio/audio.processor.ts"
+      ],
+      "../src/module/audio/audio.processor.ts": [
+        "../node_modules/@nestjs/bull/dist/index.d.ts",
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/bull/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/module/login/login.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -9607,12 +9651,14 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/module/upload/upload.controller.ts": [
+        "../node_modules/@nestjs/bull/dist/index.d.ts",
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/bull/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/module/upload/constants.ts",
         "../src/module/upload/upload.service.ts"
       ],
       "../src/module/upload/upload.module.ts": [
@@ -9634,7 +9680,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/core/nestjs-logger-lib/index.ts",
         "../src/module/upload/constants.ts"
       ],
       "../src/module/upload/upload.service.ts": [
@@ -15480,6 +15525,12 @@
         "../node_modules/winston/index.d.ts",
         "../src/core/nestjs-winston-logging-lib/interface.ts"
       ],
+      "../src/module/audio/audio.controller.ts": [
+        "../node_modules/@types/bull/index.d.ts"
+      ],
+      "../src/module/audio/audio.processor.ts": [
+        "../node_modules/@types/bull/index.d.ts"
+      ],
       "../src/module/login/login.controller.ts": [
         "../src/module/login/login.service.ts"
       ],
@@ -15491,8 +15542,7 @@
         "../src/module/upload/upload.service.ts"
       ],
       "../src/module/upload/upload.processor.ts": [
-        "../node_modules/@types/bull/index.d.ts",
-        "../src/core/nestjs-logger-lib/index.ts"
+        "../node_modules/@types/bull/index.d.ts"
       ],
       "../src/module/upload/upload.service.ts": [
         "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
@@ -16215,6 +16265,9 @@
       "../src/core/nestjs-winston-logging-lib/nestjs-winston-logging-lib.module.ts",
       "../src/core/nestjs-winston-logging-lib/nestjs-winston-logging-lib.service.ts",
       "../src/main.ts",
+      "../src/module/audio/audio.controller.ts",
+      "../src/module/audio/audio.module.ts",
+      "../src/module/audio/audio.processor.ts",
       "../src/module/login/login.controller.ts",
       "../src/module/login/login.module.ts",
       "../src/module/login/login.service.ts",
