@@ -3,11 +3,11 @@ import { UploadController } from './upload.controller';
 import { UploadService } from './upload.service';
 import { UploadProcessor } from './upload.processor';
 import { BullModule } from '@nestjs/bull';
-import { UPLOAD_FILE_QUEUE } from './constants';
+import { QUEUE_NAME_UPLOAD } from './constants';
 @Module({
   imports: [
     BullModule.registerQueue({
-      name: UPLOAD_FILE_QUEUE,
+      name: QUEUE_NAME_UPLOAD,
       redis: {
         host: 'localhost',
         port: 6379,

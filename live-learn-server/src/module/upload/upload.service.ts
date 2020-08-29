@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
 
-import { UPLOAD_FILE_QUEUE } from './constants';
+import { QUEUE_NAME_UPLOAD, QUEUE_HANDLE_UPLOAD } from './constants';
 import { IAddOpt } from './interface';
 import { Queue, Job } from 'bull';
 import { InjectQueue } from '@nestjs/bull';
@@ -12,7 +12,7 @@ import moment from 'moment';
 export class UploadService {
   constructor(
     private nestjsMdbLibService: NestjsMdbLibService,
-    @InjectQueue(UPLOAD_FILE_QUEUE) private uploadFileQueue: Queue,
+    @InjectQueue(QUEUE_NAME_UPLOAD) private uploadFileQueue: Queue,
   ) {}
 
   async add({ name, data, options = {} }: IAddOpt): Promise<Job> {
@@ -33,7 +33,7 @@ export class UploadService {
 
   async upload(data): Promise<Job> {
     const opt = {
-      name: moment().format('YYYYMMSShhmmss'),
+      name: QUEUE_HANDLE_UPLOAD,
       data: {
         ...data,
         rondom: Math.random(),
