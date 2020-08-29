@@ -12,6 +12,7 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const login_module_1 = require("./module/login/login.module");
 const common_module_1 = require("./core/common.module");
+const upload_module_1 = require("./module/upload/upload.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -19,6 +20,7 @@ AppModule = __decorate([
         imports: [
             common_module_1.CommonModule,
             login_module_1.LoginModule,
+            upload_module_1.UploadModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
