@@ -10,10 +10,25 @@ export class UploadController {
     private readonly uploadService: UploadService,
   ) {}
 
+  /**
+   * @description 测试一个元素插入到队列
+   * @param data
+   */
   @Post('upload')
-  getHello(
+  upload(
     @Body() data: any,
-  ): Promise<Job> {
+  ): Promise<{job: Job, res: any}> {
     return this.uploadService.upload(data);
+  }
+
+  /**
+   * @description 测试多个元素插入到队列
+   * @param data
+   */
+  @Post('uploadMore')
+  uploadMore(
+    @Body() data: any[],
+  ): Promise<Array<{job: Job, res: any}>> {
+    return this.uploadService.uploadMore(data);
   }
 }

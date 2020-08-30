@@ -31,14 +31,35 @@ export class UploadService {
     return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray()});
   }
 
-  async upload(data): Promise<Job> {
+  async addMongoData(options: any): Promise<any> {
+    const data = { cliKey: 'sz', db: 'queueUpload', col: 'subject' };
+
+    const col = await this.nestjsMdbLibService.getCol(data);
+    const opt = { subject: '数据库概率' + new Date().getTime().toString(), code: '02323', state: 1, ...options };
+    await col.insertOne(opt);
+    return opt;
+  }
+
+  async upload(data): Promise<{job: Job, res: any}> {
+    const res =  await this.addMongoData(data);
     const opt = {
       name: QUEUE_HANDLE_UPLOAD,
       data: {
         ...data,
+        _id: res._id,
         rondom: Math.random(),
       },
     };
-    return this.add(opt);
+    const job = await this.add(opt);
+    return Promise.resolve({
+      job,
+      res,
+    });
+  }
+  async uploadMore(data: any[]): Promise<Array<{job: Job, res: any}>> {
+    const promiseAll = data.map(async (opt: any) => {
+      return await this.upload(opt);
+    });
+    return await Promise.all(promiseAll);
   }
 }
