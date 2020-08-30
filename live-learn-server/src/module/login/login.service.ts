@@ -24,4 +24,9 @@ export class LoginService {
   async logout() {
     return this.nestjsMdbLibService.test();
   }
+
+  async register() {
+    // 注册账号
+    return 'register';
+  }
 }

@@ -14,4 +14,9 @@ export class LoginController {
   testMdb() {
     return this.loginService.logout();
   }
+
+  @Post('/register')
+  register() {
+    return this.loginService.register();
+  }
 }

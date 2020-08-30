@@ -2437,13 +2437,13 @@
         "affectsGlobalScope": false
       },
       "../src/module/login/login.service.ts": {
-        "version": "069b4f51f8e4ab4c18d5047736388b2076a47e17f76f14ef16953a05344021d6",
-        "signature": "56b185015403495245336df76b924cd3a81ea6e00cd6bf0ba599afbe1efb2b00",
+        "version": "f5e4327c9f9007c324392c0cfba79649efdfe2a4fa68221d05a6388269d08b6f",
+        "signature": "23f06037943d52351f8f4c55220cc02fa824c59233ab0db2630bbf97d581e21b",
         "affectsGlobalScope": false
       },
       "../src/module/login/login.controller.ts": {
-        "version": "0eecceb567e088825c93b2a4732de75557c8f7b7f618e61b0310043874b01b79",
-        "signature": "3f8845ec5320b72b572d246979d89b506b90e8424eab73b136e51a6ce10360f3",
+        "version": "246cf49a5a803a4a2692724dfbb4920f65dc5437a52e31cd91232f93ae0405f4",
+        "signature": "b56d497c662df249ced4c5151b5b88615efc2273d06dc6ab5603105abb1f275f",
         "affectsGlobalScope": false
       },
       "../src/module/login/login.module.ts": {
@@ -3279,6 +3279,16 @@
       "../node_modules/@types/body-parser/index.d.ts": {
         "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
         "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/ioredis/index.d.ts": {
+        "version": "da0d877bc22bd961aa9aec36bc0d02524f21abb08b645eb9335ce0079426c24a",
+        "signature": "da0d877bc22bd961aa9aec36bc0d02524f21abb08b645eb9335ce0079426c24a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/bull/index.d.ts": {
+        "version": "2b275119a19a7d0920cd0f069f23ef3d1f50f4a1dec72ba01d01c7127ab3d0c9",
+        "signature": "2b275119a19a7d0920cd0f069f23ef3d1f50f4a1dec72ba01d01c7127ab3d0c9",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/color-name/index.d.ts": {
@@ -6597,6 +6607,14 @@
         "../node_modules/@types/node/ts3.7/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../node_modules/@types/bull/index.d.ts": [
+        "../node_modules/@types/ioredis/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../node_modules/@types/color-name/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -6637,6 +6655,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/qs/index.d.ts",
         "../node_modules/@types/serve-static/index.d.ts"
+      ],
+      "../node_modules/@types/ioredis/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/ts3.7/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ],
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -12408,6 +12436,14 @@
         "../node_modules/@types/node/ts3.7/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../node_modules/@types/bull/index.d.ts": [
+        "../node_modules/@types/ioredis/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../node_modules/@types/color-name/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -12448,6 +12484,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/qs/index.d.ts",
         "../node_modules/@types/serve-static/index.d.ts"
+      ],
+      "../node_modules/@types/ioredis/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/ts3.7/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ],
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -15378,11 +15424,13 @@
       "../node_modules/@types/babel__traverse/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/bson/index.d.ts",
+      "../node_modules/@types/bull/index.d.ts",
       "../node_modules/@types/color-name/index.d.ts",
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/cookiejar/index.d.ts",
       "../node_modules/@types/express-serve-static-core/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
+      "../node_modules/@types/ioredis/index.d.ts",
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "../node_modules/@types/istanbul-lib-report/index.d.ts",
       "../node_modules/@types/istanbul-reports/index.d.ts",
