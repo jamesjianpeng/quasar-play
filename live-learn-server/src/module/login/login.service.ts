@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
+import { User } from 'src/entity/user.entity';
 @Injectable()
 export class LoginService {
   constructor(
@@ -25,8 +26,8 @@ export class LoginService {
     return this.nestjsMdbLibService.test();
   }
 
-  async register() {
+  async register(user: User) {
     // 注册账号
-    return 'register';
+    return Promise.resolve('register');
   }
 }

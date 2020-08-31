@@ -2436,14 +2436,19 @@
         "signature": "d630bf65af8bf194bd4b5ea310b5e5bdc240c1a563e9a3b88928fab9cb705873",
         "affectsGlobalScope": false
       },
+      "../src/entity/user.entity.ts": {
+        "version": "0752e49af4330cb39f434a6270cc1777de82b27e438e2996d2467f8e67ce0140",
+        "signature": "1efefcfd05c1ef2d3ae00ab32efd929fd13c5bbd57a2ca8844ef10ae0868eb03",
+        "affectsGlobalScope": false
+      },
       "../src/module/login/login.service.ts": {
-        "version": "f5e4327c9f9007c324392c0cfba79649efdfe2a4fa68221d05a6388269d08b6f",
-        "signature": "23f06037943d52351f8f4c55220cc02fa824c59233ab0db2630bbf97d581e21b",
+        "version": "bc883dcf100cdfbe6d24d3df341e57b089f1633e8ff659d977d94eda1e3a9eac",
+        "signature": "b1ac3cf1ee3d38cb08412046fe9aec8cb3e654a6e9b99e10327347feb4daf4a9",
         "affectsGlobalScope": false
       },
       "../src/module/login/login.controller.ts": {
-        "version": "246cf49a5a803a4a2692724dfbb4920f65dc5437a52e31cd91232f93ae0405f4",
-        "signature": "b56d497c662df249ced4c5151b5b88615efc2273d06dc6ab5603105abb1f275f",
+        "version": "aba05ed7dc3f1a47873fa5bef1d3a301dd01883a9a806a451e248ee06fdff13f",
+        "signature": "1f0120f296c91e79d3fa30f2936612817e0facf13198427ce9c4feced4938bda",
         "affectsGlobalScope": false
       },
       "../src/module/login/login.module.ts": {
@@ -3431,16 +3436,6 @@
         "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
         "affectsGlobalScope": false
       },
-      "../node_modules/@types/ioredis/index.d.ts": {
-        "version": "da0d877bc22bd961aa9aec36bc0d02524f21abb08b645eb9335ce0079426c24a",
-        "signature": "da0d877bc22bd961aa9aec36bc0d02524f21abb08b645eb9335ce0079426c24a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/bull/index.d.ts": {
-        "version": "2b275119a19a7d0920cd0f069f23ef3d1f50f4a1dec72ba01d01c7127ab3d0c9",
-        "signature": "2b275119a19a7d0920cd0f069f23ef3d1f50f4a1dec72ba01d01c7127ab3d0c9",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/color-name/index.d.ts": {
         "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
         "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
@@ -3449,6 +3444,11 @@
       "../node_modules/@types/cookiejar/index.d.ts": {
         "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
         "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/engine.io/index.d.ts": {
+        "version": "2bc5a885dc91b4006192c477dfae4f2856e5809c6ffbf62cc242ac010f15ab51",
+        "signature": "2bc5a885dc91b4006192c477dfae4f2856e5809c6ffbf62cc242ac010f15ab51",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/range-parser/index.d.ts": {
@@ -3580,6 +3580,11 @@
         "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
         "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
         "affectsGlobalScope": true
+      },
+      "../node_modules/@types/socket.io/index.d.ts": {
+        "version": "7d666a6623022683b640930047127f754d79393a29c0f51f3447325f8435809f",
+        "signature": "7d666a6623022683b640930047127f754d79393a29c0f51f3447325f8435809f",
+        "affectsGlobalScope": false
       },
       "../node_modules/@types/source-list-map/index.d.ts": {
         "version": "67fc055eb86a0632e2e072838f889ffe1754083cb13c8c80a06a7d895d877aae",
@@ -6912,6 +6917,16 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../node_modules/@types/engine.io/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/net.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/ts3.7/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../node_modules/@types/express-serve-static-core/index.d.ts": [
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -7631,6 +7646,17 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/socket.io/index.d.ts": [
+        "../node_modules/@types/engine.io/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/https.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/ts3.7/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../node_modules/@types/source-list-map/index.d.ts": [
@@ -9592,6 +9618,12 @@
         "../src/core/nestjs-winston-logging-lib/constans.ts",
         "../src/core/nestjs-winston-logging-lib/interface.ts"
       ],
+      "../src/entity/user.entity.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -9643,6 +9675,7 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/entity/user.entity.ts",
         "../src/module/login/login.service.ts"
       ],
       "../src/module/login/login.module.ts": [
@@ -9660,7 +9693,8 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../src/entity/user.entity.ts"
       ],
       "../src/module/upload/constants.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -12973,6 +13007,16 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../node_modules/@types/engine.io/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/net.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/ts3.7/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../node_modules/@types/express-serve-static-core/index.d.ts": [
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -13692,6 +13736,17 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/socket.io/index.d.ts": [
+        "../node_modules/@types/engine.io/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/https.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/ts3.7/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../node_modules/@types/source-list-map/index.d.ts": [
@@ -15559,10 +15614,12 @@
         "../node_modules/@types/bull/index.d.ts"
       ],
       "../src/module/login/login.controller.ts": [
+        "../src/entity/user.entity.ts",
         "../src/module/login/login.service.ts"
       ],
       "../src/module/login/login.service.ts": [
-        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts"
+        "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
+        "../src/entity/user.entity.ts"
       ],
       "../src/module/upload/upload.controller.ts": [
         "../node_modules/@types/bull/index.d.ts",
@@ -15979,6 +16036,7 @@
       "../node_modules/@types/color-name/index.d.ts",
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/cookiejar/index.d.ts",
+      "../node_modules/@types/engine.io/index.d.ts",
       "../node_modules/@types/express-serve-static-core/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
       "../node_modules/@types/ioredis/index.d.ts",
@@ -16054,6 +16112,7 @@
       "../node_modules/@types/qs/index.d.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/serve-static/index.d.ts",
+      "../node_modules/@types/socket.io/index.d.ts",
       "../node_modules/@types/source-list-map/index.d.ts",
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/superagent/index.d.ts",
@@ -16292,6 +16351,7 @@
       "../src/core/nestjs-winston-logging-lib/interface.ts",
       "../src/core/nestjs-winston-logging-lib/nestjs-winston-logging-lib.module.ts",
       "../src/core/nestjs-winston-logging-lib/nestjs-winston-logging-lib.service.ts",
+      "../src/entity/user.entity.ts",
       "../src/main.ts",
       "../src/module/audio/audio.constants.ts",
       "../src/module/audio/audio.controller.ts",
