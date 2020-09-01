@@ -31,6 +31,10 @@ export class UploadService {
     return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray()});
   }
 
+  /**
+   * @description 初始化数据状态
+   * @param options
+   */
   async addMongoData(options: any): Promise<any> {
     const data = { cliKey: 'sz', db: 'queueUpload', col: 'subject' };
 
@@ -40,6 +44,10 @@ export class UploadService {
     return opt;
   }
 
+  /**
+   * @description 添加 队列任务
+   * @param data
+   */
   async upload(data): Promise<{job: Job, res: any}> {
     const res =  await this.addMongoData(data);
     const opt = {

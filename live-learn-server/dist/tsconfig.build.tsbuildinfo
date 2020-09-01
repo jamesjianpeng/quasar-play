@@ -3327,7 +3327,7 @@
         "affectsGlobalScope": false
       },
       "../src/module/upload/upload.service.ts": {
-        "version": "62f594addc0f9d3f2b10ce3a851ee82f71989beef64372c7fd8eb9762cff162d",
+        "version": "5f8269a428a76151f69c7c71fc66e213b9a8125473825e6e7b49fcda5884e9f7",
         "signature": "f0a90b7c8417e16328db4b0ec42094838d083f4a363a79e7d92bab9147dce071",
         "affectsGlobalScope": false
       },
@@ -3337,8 +3337,8 @@
         "affectsGlobalScope": false
       },
       "../src/module/upload/upload.processor.ts": {
-        "version": "2a76575d67d2df84e448cee8b52480dbcb8623fe5cb97d59f818c5b170fd2ed1",
-        "signature": "de6a1b03bc0922343bf17bf99cd76a680a8e990b7a4f29284f82c382fdc97a3e",
+        "version": "97d3157ee39959f9a7cc35477618ee2e779b63ac81521f8afe0120587dd3474c",
+        "signature": "f8d91d1216a1b796fd0f95972ec96d1e50747a1411085f5617a6d5cfded4f9ad",
         "affectsGlobalScope": false
       },
       "../src/module/upload/upload.module.ts": {
@@ -9740,7 +9740,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/rxjs/index.d.ts",
         "../src/module/upload/constants.ts"
       ],
       "../src/module/upload/upload.service.ts": [
