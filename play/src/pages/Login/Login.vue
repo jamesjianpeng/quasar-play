@@ -29,6 +29,8 @@
 
 <script>
 import { mapActions, mapGetters, mapState } from 'vuex'
+import io from 'socket.io'
+
 export default {
   name: 'Login',
   data () {
@@ -40,6 +42,26 @@ export default {
   computed: {
     ...mapGetters('login', ['gettersTest']),
     ...mapState('login', ['stateTest'])
+  },
+  created () {
+    const socket = io('http://localhost:8080')
+    socket.on('connect', function () {
+      console.log('Connected')
+
+      socket.emit('events', { test: 'test' })
+      socket.emit('identity', 0, response =>
+        console.log('Identity:', response)
+      )
+    })
+    socket.on('events', function (data) {
+      console.log('event', data)
+    })
+    socket.on('exception', function (data) {
+      console.log('event', data)
+    })
+    socket.on('disconnect', function () {
+      console.log('Disconnected')
+    })
   },
   methods: {
     ...mapActions([

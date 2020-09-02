@@ -5,6 +5,8 @@ import { NestjsMdbLibModule } from '@smartblog/nestjs-mdb-lib';
 import { NestjsLoggintLibModule } from './nestjs-winston-logging-lib';
 import { LoggingInterceptor } from './logging.interceptor';
 import { NestjsLoggerLibService } from './nestjs-logger-lib';
+import { ScheduleModule } from '@nestjs/schedule';
+import { EventsModule } from './nestjs-websocket-lib/event.module';
 @Global()
 @Module({
   imports: [
@@ -12,7 +14,9 @@ import { NestjsLoggerLibService } from './nestjs-logger-lib';
       { url: settings.mongo_sz, key: 'sz' },
       { url: settings.mongo_hk, key: 'hk' },
     ]),
+    ScheduleModule.forRoot(),
     NestjsLoggintLibModule.register({ service: 'live-learn-service' }),
+    EventsModule,
   ],
   providers: [
     // 为了在 interceptor 中使用依赖注入的方式使用其他的 sercice 需要写成 prociders
@@ -23,6 +27,7 @@ import { NestjsLoggerLibService } from './nestjs-logger-lib';
     NestjsMdbLibModule,
     NestjsLoggintLibModule,
     NestjsLoggerLibService,
+    EventsModule,
   ],
 })
 export class CommonModule {}

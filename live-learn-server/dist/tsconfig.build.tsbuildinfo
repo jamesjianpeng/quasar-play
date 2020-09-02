@@ -3211,8 +3211,198 @@
         "signature": "d4ce9c8628b9becc5a191e9e05bf9facbc5d4cde1b420740fa0ce1ac9a489f6a",
         "affectsGlobalScope": false
       },
+      "../node_modules/@nestjs/schedule/dist/enums/cron-expression.enum.d.ts": {
+        "version": "d0c71c363e1ef27ff903212656638f30a7639bfe5437426d44b94727c7fe4687",
+        "signature": "d0c71c363e1ef27ff903212656638f30a7639bfe5437426d44b94727c7fe4687",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/enums/index.d.ts": {
+        "version": "68065ce3af3ef8599af8338068cf336be35249eff281ee393186a0ef40db3abf",
+        "signature": "68065ce3af3ef8599af8338068cf336be35249eff281ee393186a0ef40db3abf",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/decorators/cron.decorator.d.ts": {
+        "version": "f5e11b3470c7c3c44c05ef445eb509e1d339df13cee0e882edbcc5c389294f6a",
+        "signature": "f5e11b3470c7c3c44c05ef445eb509e1d339df13cee0e882edbcc5c389294f6a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/decorators/interval.decorator.d.ts": {
+        "version": "d1fd6ff6e0d1cee69f853c805f3842924425f68edc108283a0bb1628c78d1a51",
+        "signature": "d1fd6ff6e0d1cee69f853c805f3842924425f68edc108283a0bb1628c78d1a51",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/decorators/timeout.decorator.d.ts": {
+        "version": "6d3eb6a1c83878770cc946e7b8d59c51e1649aee979f4a11356a74613c52c649",
+        "signature": "6d3eb6a1c83878770cc946e7b8d59c51e1649aee979f4a11356a74613c52c649",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/decorators/index.d.ts": {
+        "version": "4e5f1234308de112f09920e0a0b99f35a9780b3abbc13a84445f32a490d0bb87",
+        "signature": "4e5f1234308de112f09920e0a0b99f35a9780b3abbc13a84445f32a490d0bb87",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/schedule.module.d.ts": {
+        "version": "a8a3b336f10078fb021c597d024a5526f2e72d81a349667db1a5cb5e9db8832c",
+        "signature": "a8a3b336f10078fb021c597d024a5526f2e72d81a349667db1a5cb5e9db8832c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/scheduler.registry.d.ts": {
+        "version": "f3e7032600be820836b4ed393f8cb82fa9024e128bbf86816d3903dc2a28f93c",
+        "signature": "f3e7032600be820836b4ed393f8cb82fa9024e128bbf86816d3903dc2a28f93c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/dist/index.d.ts": {
+        "version": "0e00d55a00ecd78664a623d02a3cc73cd5cd5074fd0195be57ef1a1f5a9c9305",
+        "signature": "0e00d55a00ecd78664a623d02a3cc73cd5cd5074fd0195be57ef1a1f5a9c9305",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/schedule/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts": {
+        "version": "7d2eed7cce648593302069d3fabed797a0a83c05f696e9ba92b1a8df2a0cbcf9",
+        "signature": "7d2eed7cce648593302069d3fabed797a0a83c05f696e9ba92b1a8df2a0cbcf9",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/adapters/index.d.ts": {
+        "version": "6aac2c5ca00378e4d1421a03f614643dc1e9fd02279257cbf2e8e2a713b00907",
+        "signature": "6aac2c5ca00378e4d1421a03f614643dc1e9fd02279257cbf2e8e2a713b00907",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/decorators/connected-socket.decorator.d.ts": {
+        "version": "33dd63d5dbfd02cdfc4fc6d47750e619de2da36fe98176731ea2a291287ff4c4",
+        "signature": "33dd63d5dbfd02cdfc4fc6d47750e619de2da36fe98176731ea2a291287ff4c4",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/decorators/gateway-server.decorator.d.ts": {
+        "version": "6ad4a01c7e7ebf90072bd6f3087abcf6a443fe41ebcb13b5a0bcfd742dd8ebd5",
+        "signature": "6ad4a01c7e7ebf90072bd6f3087abcf6a443fe41ebcb13b5a0bcfd742dd8ebd5",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/decorators/message-body.decorator.d.ts": {
+        "version": "8a4de75e44a9943c4678d37601bc09517180ad3b9245e5f4b8531b33233f2281",
+        "signature": "8a4de75e44a9943c4678d37601bc09517180ad3b9245e5f4b8531b33233f2281",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/gateway-metadata.interface.d.ts": {
+        "version": "7267ca11f2aad612f4026bb0337846d7a595d91c4c3746506957ba407a517830",
+        "signature": "7267ca11f2aad612f4026bb0337846d7a595d91c4c3746506957ba407a517830",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-connection.interface.d.ts": {
+        "version": "93850d9e8a0e018eca4809c67df09547c4b6d482c55fd6eae3030847f1c4b9ee",
+        "signature": "93850d9e8a0e018eca4809c67df09547c4b6d482c55fd6eae3030847f1c4b9ee",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-disconnect.interface.d.ts": {
+        "version": "9a8e992b0199d6b032b6223a87050e3738671f2742794233649706438fe16724",
+        "signature": "9a8e992b0199d6b032b6223a87050e3738671f2742794233649706438fe16724",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-init.interface.d.ts": {
+        "version": "f60ccdb5672ab91d03afc4f24f402e5164a6c818bf15185f5361802523f86df7",
+        "signature": "f60ccdb5672ab91d03afc4f24f402e5164a6c818bf15185f5361802523f86df7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/hooks/index.d.ts": {
+        "version": "931574e125523649902eee2db57c221a1b36417db4f2c4665bf38ce2170ea06e",
+        "signature": "931574e125523649902eee2db57c221a1b36417db4f2c4665bf38ce2170ea06e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/socket-events-host.interface.d.ts": {
+        "version": "8507490941583b43ffa5f8becc19d90530e0619b08f0c2e8bc6e71ce75ef1c14",
+        "signature": "8507490941583b43ffa5f8becc19d90530e0619b08f0c2e8bc6e71ce75ef1c14",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/web-socket-server.interface.d.ts": {
+        "version": "438b57c680914f2dd27b29789a5d8c169d3abcfb584b68a520e0df5c3ca3cef5",
+        "signature": "438b57c680914f2dd27b29789a5d8c169d3abcfb584b68a520e0df5c3ca3cef5",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts": {
+        "version": "510292e419065814acdc81c37a2d801efea1715951600cfbdc1b712f9da10451",
+        "signature": "510292e419065814acdc81c37a2d801efea1715951600cfbdc1b712f9da10451",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/index.d.ts": {
+        "version": "552c721b49a127b5ccaa59ee7793c43deb530ef4434b59b801ada4368e6b1395",
+        "signature": "552c721b49a127b5ccaa59ee7793c43deb530ef4434b59b801ada4368e6b1395",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/decorators/socket-gateway.decorator.d.ts": {
+        "version": "af3919f1e15caad054071c209341804d85ab679b78979fdf1b1aac4a73dd634a",
+        "signature": "af3919f1e15caad054071c209341804d85ab679b78979fdf1b1aac4a73dd634a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/decorators/subscribe-message.decorator.d.ts": {
+        "version": "6aa893aa7bbf9ce05b51e9af8a72816fcb5d54ce0959998640da8d0fcfd8b529",
+        "signature": "6aa893aa7bbf9ce05b51e9af8a72816fcb5d54ce0959998640da8d0fcfd8b529",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/decorators/index.d.ts": {
+        "version": "877388f59a044fc4c4689637425d4f8762662b4c6dc86d55864ca8816382b69e",
+        "signature": "877388f59a044fc4c4689637425d4f8762662b4c6dc86d55864ca8816382b69e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/errors/ws-exception.d.ts": {
+        "version": "162ffbed80dad8ce0cf81c330c88dccaae85425fb457a6afcae0110419bdedfb",
+        "signature": "162ffbed80dad8ce0cf81c330c88dccaae85425fb457a6afcae0110419bdedfb",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/errors/index.d.ts": {
+        "version": "a85d6e7924c263fdb7a9e28a578401f2f96950ff9fd0e250c76f25de5ce3b9f2",
+        "signature": "a85d6e7924c263fdb7a9e28a578401f2f96950ff9fd0e250c76f25de5ce3b9f2",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/exceptions/base-ws-exception-filter.d.ts": {
+        "version": "8ad06cf401a920fbbea4b0436b80fb92f74bfea9e79312896179d3a6c8e9a3b0",
+        "signature": "8ad06cf401a920fbbea4b0436b80fb92f74bfea9e79312896179d3a6c8e9a3b0",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/exceptions/index.d.ts": {
+        "version": "57947d16b34a3811f854965fe668e81ccea9dd6321e412ea1a2c75d4fd2619c1",
+        "signature": "57947d16b34a3811f854965fe668e81ccea9dd6321e412ea1a2c75d4fd2619c1",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/interfaces/nest-gateway.interface.d.ts": {
+        "version": "e52c9bb4a4e20ed2ed5cd0aa01d15261949691bffd4d7f5011e79bced9d14e5c",
+        "signature": "e52c9bb4a4e20ed2ed5cd0aa01d15261949691bffd4d7f5011e79bced9d14e5c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/gateway-metadata-explorer.d.ts": {
+        "version": "6c36e6a90dd3e1f5e488c56aede7168ea429589d0095285701b7b56f47262bbd",
+        "signature": "6c36e6a90dd3e1f5e488c56aede7168ea429589d0095285701b7b56f47262bbd",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/websockets/index.d.ts": {
+        "version": "4bc4c7612f5cc6298b01f76f7a21674181ae6e199a0b07c518107c15bde32344",
+        "signature": "4bc4c7612f5cc6298b01f76f7a21674181ae6e199a0b07c518107c15bde32344",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/engine.io/index.d.ts": {
+        "version": "2bc5a885dc91b4006192c477dfae4f2856e5809c6ffbf62cc242ac010f15ab51",
+        "signature": "2bc5a885dc91b4006192c477dfae4f2856e5809c6ffbf62cc242ac010f15ab51",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/socket.io/index.d.ts": {
+        "version": "7d666a6623022683b640930047127f754d79393a29c0f51f3447325f8435809f",
+        "signature": "7d666a6623022683b640930047127f754d79393a29c0f51f3447325f8435809f",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-websocket-lib/events.gateway.ts": {
+        "version": "368f0962243a68b8527267f4c93afe1b4d079113984ff6ca9c958e50b6907255",
+        "signature": "ecd77ffb8b0de3eeddd6d1b743241ad879880ac81e2946854d9c07e82713c38b",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-websocket-lib/event.module.ts": {
+        "version": "373589c5b1edc5aaafa87cfd0d75934affb36d62585f1a737460809f22f3a7a1",
+        "signature": "354b5fa59b2bfccc0758d0835f41034bc595b84e693080e112a292ba0556edbd",
+        "affectsGlobalScope": false
+      },
       "../src/core/common.module.ts": {
-        "version": "d796c1e51fe592f6dddeaa9db3f4e9b52efabea8c10aaabec220034e86712ec6",
+        "version": "b96268aea43d0c93e37ad4965c8754f37101ae0078956a4b92e4ba51dde56346",
         "signature": "7214164cfa10573d2bf79da5174719e21aa58d3745730ba5464fd4491e9d5c6c",
         "affectsGlobalScope": false
       },
@@ -3391,129 +3581,14 @@
         "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "affectsGlobalScope": false
       },
-      "../node_modules/@types/anymatch/index.d.ts": {
-        "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
-        "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+      "../src/core/nestjs-redis-lib/constants.ts": {
+        "version": "ed86f3cf9dd97054fc0a4f7c36ac0148fff308ea329b541bb1dc846bd9caf946",
+        "signature": "d0b8ea05e2998196dd7efdc44d57fabb4ab0a80da0239fb78f63cf3f9684fe8d",
         "affectsGlobalScope": false
       },
-      "../node_modules/@babel/types/lib/index.d.ts": {
-        "version": "e1d0b45d2995163faae5784de982d49be585d0f77073ec4567850e2feb20e880",
-        "signature": "e1d0b45d2995163faae5784de982d49be585d0f77073ec4567850e2feb20e880",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__generator/index.d.ts": {
-        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__traverse/index.d.ts": {
-        "version": "704d8cb257ede7d0e88a353b712bb8324885ccc860cb5fdf8bbd435da810c1e6",
-        "signature": "704d8cb257ede7d0e88a353b712bb8324885ccc860cb5fdf8bbd435da810c1e6",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@babel/parser/typings/babel-parser.d.ts": {
-        "version": "98c2e3c00ed72daf568c0526ea4f4257f2c43dc5eaacd3d703c3b33f6df1ae86",
-        "signature": "98c2e3c00ed72daf568c0526ea4f4257f2c43dc5eaacd3d703c3b33f6df1ae86",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__template/index.d.ts": {
-        "version": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
-        "signature": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__core/index.d.ts": {
-        "version": "7df3163944694feeac63067632a8dc2e2dea1350119ec8b43df277af69198369",
-        "signature": "7df3163944694feeac63067632a8dc2e2dea1350119ec8b43df277af69198369",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/connect/index.d.ts": {
-        "version": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
-        "signature": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/body-parser/index.d.ts": {
-        "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
-        "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/color-name/index.d.ts": {
-        "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
-        "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/cookiejar/index.d.ts": {
-        "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
-        "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/engine.io/index.d.ts": {
-        "version": "2bc5a885dc91b4006192c477dfae4f2856e5809c6ffbf62cc242ac010f15ab51",
-        "signature": "2bc5a885dc91b4006192c477dfae4f2856e5809c6ffbf62cc242ac010f15ab51",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/range-parser/index.d.ts": {
-        "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
-        "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/qs/index.d.ts": {
-        "version": "adec64722d7da7581f6137c69426fc6e3859609e3c2ceeffb311f0be9a5ba4ae",
-        "signature": "adec64722d7da7581f6137c69426fc6e3859609e3c2ceeffb311f0be9a5ba4ae",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/express-serve-static-core/index.d.ts": {
-        "version": "343113a79319b75b3b735323d4c8667faed0a1fbe4ba696ecbd89eb3518ab244",
-        "signature": "343113a79319b75b3b735323d4c8667faed0a1fbe4ba696ecbd89eb3518ab244",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/@types/mime/index.d.ts": {
-        "version": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
-        "signature": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/serve-static/index.d.ts": {
-        "version": "adde1c915ab3b61a2821c72f226546c6c119a061a2ff4d6f90b3d61c005ae1f8",
-        "signature": "adde1c915ab3b61a2821c72f226546c6c119a061a2ff4d6f90b3d61c005ae1f8",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/express/index.d.ts": {
-        "version": "46453f63ea6f9197248ffb80839f423b14f8d8d7dbb2c4902b8797b44d259859",
-        "signature": "46453f63ea6f9197248ffb80839f423b14f8d8d7dbb2c4902b8797b44d259859",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
-        "version": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
-        "signature": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/istanbul-lib-report/index.d.ts": {
-        "version": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
-        "signature": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/istanbul-reports/index.d.ts": {
-        "version": "029769d13d9917e3284cb2356ed28a6576e8b07ae6a06ee1e672518adf21a102",
-        "signature": "029769d13d9917e3284cb2356ed28a6576e8b07ae6a06ee1e672518adf21a102",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/jest-diff/build/types.d.ts": {
-        "version": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
-        "signature": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/jest-diff/build/index.d.ts": {
-        "version": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
-        "signature": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/jest/index.d.ts": {
-        "version": "375c56b1890858dcdae495877f0ce3b694980adf64762e2fd3fbe78e3eac76ba",
-        "signature": "375c56b1890858dcdae495877f0ce3b694980adf64762e2fd3fbe78e3eac76ba",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/@types/json5/index.d.ts": {
-        "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
-        "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
+      "../src/core/nestjs-redis-lib/interface.ts": {
+        "version": "9c1bb10a871afaeec18413ddd8e6266cf25a1962ca29baf6f0399cc2040120e1",
+        "signature": "2256af184d0cac4e4e53b44e1a80a4d9b3dd6611cbac34cf4b601a8ba5b446b9",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/lodash/ts3.1/common/common.d.ts": {
@@ -3581,9 +3656,139 @@
         "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
         "affectsGlobalScope": true
       },
-      "../node_modules/@types/socket.io/index.d.ts": {
-        "version": "7d666a6623022683b640930047127f754d79393a29c0f51f3447325f8435809f",
-        "signature": "7d666a6623022683b640930047127f754d79393a29c0f51f3447325f8435809f",
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts": {
+        "version": "75a8db472cd2efd4904373eb4bbe1de35c1134c627bb43428e4e32a90ee756a2",
+        "signature": "d98c48113c3c693db6da235295415f80c6a6ff8d6f0763197fdd013fc3e32e36",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.module.ts": {
+        "version": "47d447ec78295eafd96695308cdc0883d52ab832a72bb58c4c29013533ca0852",
+        "signature": "3141073ba2cb708092364f53c3788a24f4dca96ccee72ec179db2d3d4e93008f",
+        "affectsGlobalScope": false
+      },
+      "../src/core/nestjs-redis-lib/index.ts": {
+        "version": "17ef7357559e22725027868f7720551017fffd9e9a04d4548e77e523408a5307",
+        "signature": "17ef7357559e22725027868f7720551017fffd9e9a04d4548e77e523408a5307",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/anymatch/index.d.ts": {
+        "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+        "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@babel/types/lib/index.d.ts": {
+        "version": "e1d0b45d2995163faae5784de982d49be585d0f77073ec4567850e2feb20e880",
+        "signature": "e1d0b45d2995163faae5784de982d49be585d0f77073ec4567850e2feb20e880",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "704d8cb257ede7d0e88a353b712bb8324885ccc860cb5fdf8bbd435da810c1e6",
+        "signature": "704d8cb257ede7d0e88a353b712bb8324885ccc860cb5fdf8bbd435da810c1e6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "98c2e3c00ed72daf568c0526ea4f4257f2c43dc5eaacd3d703c3b33f6df1ae86",
+        "signature": "98c2e3c00ed72daf568c0526ea4f4257f2c43dc5eaacd3d703c3b33f6df1ae86",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__template/index.d.ts": {
+        "version": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
+        "signature": "3e0a34f7207431d967dc32d593d1cda0c23975e9484bc8895b39d96ffca4a0d8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__core/index.d.ts": {
+        "version": "7df3163944694feeac63067632a8dc2e2dea1350119ec8b43df277af69198369",
+        "signature": "7df3163944694feeac63067632a8dc2e2dea1350119ec8b43df277af69198369",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/connect/index.d.ts": {
+        "version": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
+        "signature": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/body-parser/index.d.ts": {
+        "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/color-name/index.d.ts": {
+        "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
+        "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/cookiejar/index.d.ts": {
+        "version": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
+        "signature": "16b7fb094ffaa5d270f934e7406e8baee2f8245cfabf6dcc20f693389f005f56",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/range-parser/index.d.ts": {
+        "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
+        "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/qs/index.d.ts": {
+        "version": "adec64722d7da7581f6137c69426fc6e3859609e3c2ceeffb311f0be9a5ba4ae",
+        "signature": "adec64722d7da7581f6137c69426fc6e3859609e3c2ceeffb311f0be9a5ba4ae",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/express-serve-static-core/index.d.ts": {
+        "version": "343113a79319b75b3b735323d4c8667faed0a1fbe4ba696ecbd89eb3518ab244",
+        "signature": "343113a79319b75b3b735323d4c8667faed0a1fbe4ba696ecbd89eb3518ab244",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/mime/index.d.ts": {
+        "version": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
+        "signature": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/serve-static/index.d.ts": {
+        "version": "adde1c915ab3b61a2821c72f226546c6c119a061a2ff4d6f90b3d61c005ae1f8",
+        "signature": "adde1c915ab3b61a2821c72f226546c6c119a061a2ff4d6f90b3d61c005ae1f8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/express/index.d.ts": {
+        "version": "46453f63ea6f9197248ffb80839f423b14f8d8d7dbb2c4902b8797b44d259859",
+        "signature": "46453f63ea6f9197248ffb80839f423b14f8d8d7dbb2c4902b8797b44d259859",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
+        "signature": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/istanbul-lib-report/index.d.ts": {
+        "version": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "signature": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/istanbul-reports/index.d.ts": {
+        "version": "029769d13d9917e3284cb2356ed28a6576e8b07ae6a06ee1e672518adf21a102",
+        "signature": "029769d13d9917e3284cb2356ed28a6576e8b07ae6a06ee1e672518adf21a102",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/jest-diff/build/types.d.ts": {
+        "version": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
+        "signature": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/jest-diff/build/index.d.ts": {
+        "version": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
+        "signature": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/index.d.ts": {
+        "version": "375c56b1890858dcdae495877f0ce3b694980adf64762e2fd3fbe78e3eac76ba",
+        "signature": "375c56b1890858dcdae495877f0ce3b694980adf64762e2fd3fbe78e3eac76ba",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/json5/index.d.ts": {
+        "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
+        "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/source-list-map/index.d.ts": {
@@ -5161,6 +5366,253 @@
       ],
       "../node_modules/@nestjs/core/services/reflector.service.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/cron.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/decorators/cron.decorator.d.ts",
+        "../node_modules/@nestjs/schedule/dist/decorators/interval.decorator.d.ts",
+        "../node_modules/@nestjs/schedule/dist/decorators/timeout.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/interval.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/timeout.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/enums/cron-expression.enum.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/enums/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/enums/cron-expression.enum.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/schedule/dist/enums/index.d.ts",
+        "../node_modules/@nestjs/schedule/dist/schedule.module.d.ts",
+        "../node_modules/@nestjs/schedule/dist/scheduler.registry.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/schedule.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/scheduler.registry.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/adapters/index.d.ts": [
+        "../node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/connected-socket.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/gateway-server.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/index.d.ts": [
+        "../node_modules/@nestjs/websockets/decorators/connected-socket.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/gateway-server.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/message-body.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/socket-gateway.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/subscribe-message.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/message-body.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/socket-gateway.decorator.d.ts": [
+        "../node_modules/@nestjs/websockets/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/subscribe-message.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/errors/index.d.ts": [
+        "../node_modules/@nestjs/websockets/errors/ws-exception.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/errors/ws-exception.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/exceptions/base-ws-exception-filter.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/exceptions/index.d.ts": [
+        "../node_modules/@nestjs/websockets/exceptions/base-ws-exception-filter.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/gateway-metadata-explorer.d.ts": [
+        "../node_modules/@nestjs/core/metadata-scanner.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/nest-gateway.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/index.d.ts": [
+        "../node_modules/@nestjs/websockets/adapters/index.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/index.d.ts",
+        "../node_modules/@nestjs/websockets/errors/index.d.ts",
+        "../node_modules/@nestjs/websockets/exceptions/index.d.ts",
+        "../node_modules/@nestjs/websockets/gateway-metadata-explorer.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/reflect-metadata/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/gateway-metadata.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/index.d.ts": [
+        "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-connection.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-disconnect.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-init.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-connection.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-disconnect.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-init.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/websockets/interfaces/gateway-metadata.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/hooks/index.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/socket-events-host.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/web-socket-server.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/nest-gateway.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/socket-events-host.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/web-socket-server.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
@@ -9523,6 +9975,7 @@
       "../src/core/common.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/schedule/index.d.ts",
         "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -9531,6 +9984,7 @@
         "../settings.json",
         "../src/core/logging.interceptor.ts",
         "../src/core/nestjs-logger-lib/index.ts",
+        "../src/core/nestjs-websocket-lib/event.module.ts",
         "../src/core/nestjs-winston-logging-lib/index.ts"
       ],
       "../src/core/logging.interceptor.ts": [
@@ -9575,6 +10029,66 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/core/nestjs-redis-lib/constants.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/core/nestjs-redis-lib/index.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/core/nestjs-redis-lib/nestjs-mdb-lib.module.ts",
+        "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts"
+      ],
+      "../src/core/nestjs-redis-lib/interface.ts": [
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/core/nestjs-redis-lib/constants.ts",
+        "../src/core/nestjs-redis-lib/interface.ts",
+        "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts"
+      ],
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/lodash/ts3.1/index.d.ts",
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/core/nestjs-redis-lib/constants.ts",
+        "../src/core/nestjs-redis-lib/interface.ts"
+      ],
+      "../src/core/nestjs-websocket-lib/event.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/core/nestjs-websocket-lib/events.gateway.ts"
+      ],
+      "../src/core/nestjs-websocket-lib/events.gateway.ts": [
+        "../node_modules/@nestjs/websockets/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/socket.io/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/rxjs/operators/index.d.ts"
       ],
       "../src/core/nestjs-winston-logging-lib/constans.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -11250,6 +11764,253 @@
       ],
       "../node_modules/@nestjs/core/services/reflector.service.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/cron.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/decorators/cron.decorator.d.ts",
+        "../node_modules/@nestjs/schedule/dist/decorators/interval.decorator.d.ts",
+        "../node_modules/@nestjs/schedule/dist/decorators/timeout.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/interval.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/decorators/timeout.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/enums/cron-expression.enum.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/enums/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/enums/cron-expression.enum.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/schedule/dist/enums/index.d.ts",
+        "../node_modules/@nestjs/schedule/dist/schedule.module.d.ts",
+        "../node_modules/@nestjs/schedule/dist/scheduler.registry.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/schedule.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/dist/scheduler.registry.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/schedule/index.d.ts": [
+        "../node_modules/@nestjs/schedule/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/adapters/index.d.ts": [
+        "../node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/connected-socket.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/gateway-server.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/index.d.ts": [
+        "../node_modules/@nestjs/websockets/decorators/connected-socket.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/gateway-server.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/message-body.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/socket-gateway.decorator.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/subscribe-message.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/message-body.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/socket-gateway.decorator.d.ts": [
+        "../node_modules/@nestjs/websockets/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/decorators/subscribe-message.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/errors/index.d.ts": [
+        "../node_modules/@nestjs/websockets/errors/ws-exception.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/errors/ws-exception.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/exceptions/base-ws-exception-filter.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/exceptions/index.d.ts": [
+        "../node_modules/@nestjs/websockets/exceptions/base-ws-exception-filter.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/gateway-metadata-explorer.d.ts": [
+        "../node_modules/@nestjs/core/metadata-scanner.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/nest-gateway.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/index.d.ts": [
+        "../node_modules/@nestjs/websockets/adapters/index.d.ts",
+        "../node_modules/@nestjs/websockets/decorators/index.d.ts",
+        "../node_modules/@nestjs/websockets/errors/index.d.ts",
+        "../node_modules/@nestjs/websockets/exceptions/index.d.ts",
+        "../node_modules/@nestjs/websockets/gateway-metadata-explorer.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/reflect-metadata/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/gateway-metadata.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/index.d.ts": [
+        "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-connection.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-disconnect.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-init.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-connection.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-disconnect.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-init.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/websockets/interfaces/gateway-metadata.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/hooks/index.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/socket-events-host.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/web-socket-server.interface.d.ts",
+        "../node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/nest-gateway.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/socket-events-host.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/web-socket-server.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
@@ -15588,6 +16349,26 @@
       "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
+      "../src/core/nestjs-redis-lib/index.ts": [
+        "../src/core/nestjs-redis-lib/nestjs-mdb-lib.module.ts",
+        "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts"
+      ],
+      "../src/core/nestjs-redis-lib/interface.ts": [
+        "../node_modules/@types/mongodb/index.d.ts"
+      ],
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/core/nestjs-redis-lib/interface.ts"
+      ],
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/core/nestjs-redis-lib/interface.ts"
+      ],
+      "../src/core/nestjs-websocket-lib/events.gateway.ts": [
+        "../node_modules/@nestjs/websockets/index.d.ts",
+        "../node_modules/@types/socket.io/index.d.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
       "../src/core/nestjs-winston-logging-lib/constans.ts": [
         "../node_modules/winston/index.d.ts"
       ],
@@ -15822,6 +16603,40 @@
       "../node_modules/@nestjs/core/router/request/request-constants.d.ts",
       "../node_modules/@nestjs/core/services/index.d.ts",
       "../node_modules/@nestjs/core/services/reflector.service.d.ts",
+      "../node_modules/@nestjs/schedule/dist/decorators/cron.decorator.d.ts",
+      "../node_modules/@nestjs/schedule/dist/decorators/index.d.ts",
+      "../node_modules/@nestjs/schedule/dist/decorators/interval.decorator.d.ts",
+      "../node_modules/@nestjs/schedule/dist/decorators/timeout.decorator.d.ts",
+      "../node_modules/@nestjs/schedule/dist/enums/cron-expression.enum.d.ts",
+      "../node_modules/@nestjs/schedule/dist/enums/index.d.ts",
+      "../node_modules/@nestjs/schedule/dist/index.d.ts",
+      "../node_modules/@nestjs/schedule/dist/schedule.module.d.ts",
+      "../node_modules/@nestjs/schedule/dist/scheduler.registry.d.ts",
+      "../node_modules/@nestjs/schedule/index.d.ts",
+      "../node_modules/@nestjs/websockets/adapters/index.d.ts",
+      "../node_modules/@nestjs/websockets/adapters/ws-adapter.d.ts",
+      "../node_modules/@nestjs/websockets/decorators/connected-socket.decorator.d.ts",
+      "../node_modules/@nestjs/websockets/decorators/gateway-server.decorator.d.ts",
+      "../node_modules/@nestjs/websockets/decorators/index.d.ts",
+      "../node_modules/@nestjs/websockets/decorators/message-body.decorator.d.ts",
+      "../node_modules/@nestjs/websockets/decorators/socket-gateway.decorator.d.ts",
+      "../node_modules/@nestjs/websockets/decorators/subscribe-message.decorator.d.ts",
+      "../node_modules/@nestjs/websockets/errors/index.d.ts",
+      "../node_modules/@nestjs/websockets/errors/ws-exception.d.ts",
+      "../node_modules/@nestjs/websockets/exceptions/base-ws-exception-filter.d.ts",
+      "../node_modules/@nestjs/websockets/exceptions/index.d.ts",
+      "../node_modules/@nestjs/websockets/gateway-metadata-explorer.d.ts",
+      "../node_modules/@nestjs/websockets/index.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/gateway-metadata.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/hooks/index.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-connection.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-disconnect.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/hooks/on-gateway-init.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/index.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/nest-gateway.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/socket-events-host.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/web-socket-server.interface.d.ts",
+      "../node_modules/@nestjs/websockets/interfaces/ws-response.interface.d.ts",
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/index.d.ts",
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/src/index.d.ts",
       "../node_modules/@smartblog/nestjs-mdb-lib/dist/src/interface.d.ts",
@@ -16345,6 +17160,13 @@
       "../src/core/nestjs-logger-lib/interface.ts",
       "../src/core/nestjs-logger-lib/nestjs-logger-lib.module.ts",
       "../src/core/nestjs-logger-lib/nestjs-logger-lib.service.ts",
+      "../src/core/nestjs-redis-lib/constants.ts",
+      "../src/core/nestjs-redis-lib/index.ts",
+      "../src/core/nestjs-redis-lib/interface.ts",
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.module.ts",
+      "../src/core/nestjs-redis-lib/nestjs-mdb-lib.service.ts",
+      "../src/core/nestjs-websocket-lib/event.module.ts",
+      "../src/core/nestjs-websocket-lib/events.gateway.ts",
       "../src/core/nestjs-winston-logging-lib/constans.ts",
       "../src/core/nestjs-winston-logging-lib/index.ts",
       "../src/core/nestjs-winston-logging-lib/interface.ts",
