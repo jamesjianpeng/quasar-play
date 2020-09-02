@@ -29,7 +29,7 @@
 
 <script>
 import { mapActions, mapGetters, mapState } from 'vuex'
-import io from 'socket.io'
+import io from 'socket.io-client'
 
 export default {
   name: 'Login',
