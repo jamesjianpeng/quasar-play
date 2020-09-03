@@ -44,7 +44,8 @@ export default {
     ...mapState('login', ['stateTest'])
   },
   created () {
-    const socket = io('http://localhost:8080')
+    const socket = io('http://localhost:10010')
+    console.log(socket)
     socket.on('connect', function () {
       console.log('Connected')
 
@@ -61,6 +62,11 @@ export default {
     })
     socket.on('disconnect', function () {
       console.log('Disconnected')
+    })
+    socket.on('toClient', function (data) {
+      console.log('toClient')
+      console.log(data)
+      console.log('toClient')
     })
   },
   methods: {
