@@ -1,7 +1,6 @@
 import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
-import winston, { format } from 'winston';
 import { NestjsWinstonLoggingLibService } from './nestjs-winston-logging-lib';
 import { NestjsLoggerLibService } from './nestjs-logger-lib'
 

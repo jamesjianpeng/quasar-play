@@ -3,11 +3,12 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
 import settings from '../../settings.json';
 import { NestjsMdbLibModule } from '@smartblog/nestjs-mdb-lib';
 import { NestjsRdbLibModule } from '@smartblog/nestjs-rdb-lib';
-import { NestjsLoggintLibModule } from './nestjs-winston-logging-lib';
+import { NestjsWinstonLoggintLibModule } from './nestjs-winston-logging-lib';
 import { LoggingInterceptor } from './logging.interceptor';
 import { NestjsLoggerLibService } from './nestjs-logger-lib';
 import { ScheduleModule } from '@nestjs/schedule';
 import { EventsModule } from './nestjs-websocket-lib/event.module';
+import { createLogFileLocation } from './utils'
 
 @Global()
 @Module({
@@ -21,7 +22,10 @@ import { EventsModule } from './nestjs-websocket-lib/event.module';
       { url: settings.redis_sz_2, key: 'sz_2' }
     ]),
     ScheduleModule.forRoot(),
-    NestjsLoggintLibModule.register({ service: 'live-learn-service' }),
+    NestjsWinstonLoggintLibModule.register({
+      service: 'live-learn-service',
+      fileLocation: createLogFileLocation(settings.serverLogFileLocation)
+    }),
     EventsModule,
   ],
   providers: [
@@ -32,7 +36,7 @@ import { EventsModule } from './nestjs-websocket-lib/event.module';
   exports: [
     NestjsMdbLibModule,
     NestjsRdbLibModule,
-    NestjsLoggintLibModule,
+    NestjsWinstonLoggintLibModule,
     NestjsLoggerLibService,
     EventsModule,
   ],

@@ -7,29 +7,14 @@ import winston from 'winston';
 export class NestjsWinstonLoggingLibService {
   private loggerOptions: ILoggingCreateOptions = [
     {
-      level: 'info',
-      options: this.createLoggerOptions({
-        transports: [
-          new winston.transports.File({ filename: 'info.log', level: 'info' }),
-        ],
-      }),
+      level: 'info'
     },
     {
-      level: 'warn',
-      options: this.createLoggerOptions({
-        transports: [
-          new winston.transports.File({ filename: 'warn.log', level: 'warn' }),
-        ],
-      }),
+      level: 'warn'
     },
     {
-      level: 'error',
-      options: this.createLoggerOptions({
-        transports: [
-          new winston.transports.File({ filename: 'error.log', level: 'error' }),
-        ],
-      }),
-    },
+      level: 'error'
+    }
   ];
 
   private loggingMap: winston.Logger[] = [];
@@ -44,33 +29,40 @@ export class NestjsWinstonLoggingLibService {
     return winston.createLogger(options);
   }
 
-  createLoggerOptions(options: winston.LoggerOptions): winston.LoggerOptions {
+  createLoggerOptions({ level }: ILoggingCreateOption): winston.LoggerOptions {
+    let filename = `${level}.log`
+    filename = this.options.fileLocation ? `${this.options.fileLocation}/${filename}` : filename
+    const options = {
+      level,
+      defaultMeta: {
+        service: this.options.service
+      },
+      transports: [
+        new winston.transports.File({ filename, level })
+      ]
+    }
     return {
       ...commonConfig,
-      defaultMeta: { service: this.options.service },
+      ...options
     };
   }
 
   createLoggers() {
-    this.loggerOptions.map(({ level, options }: ILoggingCreateOption) => {
-      this.loggingMap[level] = this.createLogger(options);
+    this.loggerOptions.map((opt: ILoggingCreateOption) => {
+      const option = this.createLoggerOptions(opt)
+      this.loggingMap[opt.level] = this.createLogger(option)
     });
     return this.loggingMap;
   }
 
   log({ level, text }: ILog) {
+    console.log(this.loggingMap)
     const logger: winston.Logger = this.loggingMap[level];
     if (!logger) {
       console.error(`${level} logger is invalid，${text} don't output`);
       return;
     }
     return logger[level](text);
-  }
-
-  addLog(opt: ILoggingCreateOption): winston.Logger {
-    this.loggerOptions.push(opt);
-    this.loggingMap[opt.level] = this.createLogger(opt);
-    return this.loggingMap[opt.level];
   }
 
   async test() {

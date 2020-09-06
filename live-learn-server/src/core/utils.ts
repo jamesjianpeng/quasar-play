@@ -1,3 +1,7 @@
+import path from 'path'
+import fs from 'fs'
+import { promisify } from 'util'
+
 /**
  * @description mongo / redis 的 url 转为 host/port/db/user/password 对象
  * @param url redis://<user>:<password>@<host>:<port>/<db>
@@ -21,4 +25,15 @@ export const dbUrlToObject = (url: string, prefix?: string) => {
       password: passwordAndHost.split('@')[0],
   }
   return res
+}
+
+/**
+ * @description 创建 log 文件
+ */
+export const createLogFileLocation = (fileLocation: string) => {
+  const exist = fs.existsSync(fileLocation)
+  if (!exist) {
+    fs.mkdirSync(fileLocation, { recursive: true })
+  }
+  return fileLocation
 }

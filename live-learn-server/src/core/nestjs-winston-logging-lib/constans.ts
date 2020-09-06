@@ -10,9 +10,5 @@ export const commonConfig = {
       format: 'YYYY-MM-DD HH:mm:ss',
     }),
     format.simple(),
-  ),
-  defaultMeta: { service: serviceName },
-  transports: [
-    new winston.transports.File({ filename: 'info.log' }),
-  ],
+  )
 };

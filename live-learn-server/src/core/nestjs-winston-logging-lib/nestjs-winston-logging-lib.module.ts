@@ -7,10 +7,10 @@ import { NestjsWinstonLoggingLibService } from './nestjs-winston-logging-lib.ser
   providers: [NestjsWinstonLoggingLibService],
   exports: [NestjsWinstonLoggingLibService],
 })
-export class NestjsLoggintLibModule {
+export class NestjsWinstonLoggintLibModule {
   static register(options: ILoggingOptions): DynamicModule {
     return {
-      module: NestjsLoggintLibModule,
+      module: NestjsWinstonLoggintLibModule,
       providers: [
         {
           provide: ILOGGLING_OPTION,

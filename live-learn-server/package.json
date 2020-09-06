@@ -28,6 +28,7 @@
     "@nestjs/schedule": "^0.4.0",
     "@nestjs/websockets": "^7.4.4",
     "@smartblog/nestjs-mdb-lib": "^1.0.17",
+    "@smartblog/nestjs-rdb-lib": "^1.0.3",
     "@types/redis": "^2.8.27",
     "bcryptjs": "^2.4.3",
     "bull": "^3.18.0",
