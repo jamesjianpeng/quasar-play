@@ -53,7 +53,13 @@ export default {
       socket.emit('identity', 0, response =>
         console.log('Identity:', response)
       )
+      socket.emit('initClientServer', { clientName: 'message' }, response =>
+        console.log(response)
+      )
     })
+    socket.on('initClientServer', { clientName: 'message' }, response =>
+      console.log(response)
+    )
     socket.on('events', function (data) {
       console.log('event', data)
     })
