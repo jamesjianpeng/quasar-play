@@ -19,4 +19,9 @@ export class AppController {
   testLib() {
     return this.appService.testLib();
   }
+
+  @Get('/test')
+  test() {
+    return this.appService.test();
+  }
 }

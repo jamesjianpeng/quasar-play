@@ -1,10 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
 import { NestjsLoggerLibService } from './core/nestjs-logger-lib';
+import { NestjsRdbLibService } from '@smartblog/nestjs-rdb-lib';
 @Injectable()
 export class AppService {
   constructor(
     private nestjsMdbLibService: NestjsMdbLibService,
+    private nestjsRdbLibService: NestjsRdbLibService,
     private nestjsLoggerLibService: NestjsLoggerLibService,
   ) {}
 
@@ -16,7 +18,9 @@ export class AppService {
 
     const dd = { cliKey: 'hk', db: 'ghost-live&learn', col: 'subject_hk' };
     const colHk = await this.nestjsMdbLibService.getCol(dd);
-    return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray()});
+
+    const redis2Value =  await this.nestjsRdbLibService.toPromiseRes({ key: 'sz_2', api: 'get', opt: ['helloKey'] })
+    return Promise.resolve({ hk: await (await colHk.find()).toArray(), redis2Value, sz: await (await col.find()).toArray()});
   }
 
   async getHello() {
