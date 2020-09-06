@@ -16,7 +16,7 @@
             <q-btn unelevated color="light-green-7" @click="login" size="lg" class="full-width" label="Login" />
           </q-card-actions>
           <q-card-section class="text-center q-pa-none">
-            <p class="text-grey-6">Not reigistered? Created an Account </p>
+            <p class="text-grey-6" @click="$router.push('/register')">Not reigistered? Created an Account </p>
           </q-card-section>
           <q-card-section class="text-center q-pa-none">
             <p class="text-grey-6">{{gettersTest}}</p>

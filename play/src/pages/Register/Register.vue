@@ -2,7 +2,7 @@
   <q-page class="bg-light-green window-height window-width row justify-center items-center">
     <div class="column shadow-8">
       <div class="row justify-center items-center">
-        <h5 class="text-h5 text-white q-my-md text-weight-bolder">LIVE & LEARN</h5>
+        <h5 class="text-h5 text-white q-my-md text-weight-bolder">LIVE & LEARN Register</h5>
       </div>
       <div class="row">
         <q-card square bordered class="q-pa-lg shadow-1">
@@ -13,11 +13,8 @@
             </q-form>
           </q-card-section>
           <q-card-actions class="q-px-md">
-            <q-btn unelevated color="light-green-7" @click="login" size="lg" class="full-width" label="Login" />
+            <q-btn unelevated color="light-green-7" @click="login" size="lg" class="full-width" label="Register" />
           </q-card-actions>
-          <q-card-section class="text-center q-pa-none">
-            <p class="text-grey-6">Not reigistered? Created an Account </p>
-          </q-card-section>
           <q-card-section class="text-center q-pa-none">
             <p class="text-grey-6">{{gettersTest}}</p>
           </q-card-section>

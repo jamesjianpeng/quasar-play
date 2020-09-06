@@ -31,6 +31,16 @@ const routes = [
     ]
   },
   {
+    path: '/register',
+    component: () => import('layouts/LoginLayout.vue'),
+    children: [
+      {
+        path: '',
+        component: () => import('pages/Register/Register.vue')
+      }
+    ]
+  },
+  {
     path: '*',
     component: () => import('pages/Error404.vue')
   }
