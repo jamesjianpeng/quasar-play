@@ -1,13 +1,27 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, OnModuleInit } from '@nestjs/common';
 import { NestjsMdbLibService } from '@smartblog/nestjs-mdb-lib';
 import { NestjsRdbLibService } from '@smartblog/nestjs-rdb-lib';
 import { User } from 'src/entity/user.entity';
+import { Collection } from 'mongodb';
+import { compare, genSalt, hash } from 'bcryptjs'
+// import { Collection } from 'mongodb';
 @Injectable()
-export class LoginService {
+export class LoginService implements OnModuleInit {
+  private colUser: Collection
+
   constructor(
     private nestjsMdbLibService: NestjsMdbLibService,
     private nestjsRdbLibService: NestjsRdbLibService,
   ) {}
+
+  onModuleInit () {
+    this.init()
+  }
+
+  async init () {
+    const data = { cliKey: 'sz', db: 'LiveLearn', col: 'user' };
+    this.colUser = await this.nestjsMdbLibService.getCol(data);
+  }
 
   async test() {
     const data = { cliKey: 'sz', db: 'ghost-live&learn', col: 'subject_sz' };
@@ -23,6 +37,7 @@ export class LoginService {
   }
 
   async login() {
+    this.test()
     return 'Hello World!';
   }
 
@@ -32,6 +47,24 @@ export class LoginService {
 
   async register(user: User) {
     // 注册账号
-    return Promise.resolve('register');
+    console.log(await( await this.colUser.find()).toArray())
+    const currentUser = this.colUser.findOne({ email: user.email })
+    if (!currentUser) {
+      return Promise.reject('改用户已经存在')
+    }
+    console.log(user.password)
+    user.password = Buffer.from(user.password, 'base64').toString() // 前端 base64 加密的密码，解密，再进行 bcryptjs 加密存储
+    console.log(user.password)
+    user.password = await this.hashPassword(user.password)
+    this.colUser.insertOne(user)
+    return Promise.resolve(user);
+  }
+
+  protected async hashPassword(password: string): Promise<string> {
+    const salt = await genSalt(12);
+    console.log(salt, 'salt')
+    const hashedPassword = await hash(password, salt);
+    console.log(hashedPassword, 'password')
+    return hashedPassword;
   }
 }

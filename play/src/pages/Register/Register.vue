@@ -13,7 +13,7 @@
             </q-form>
           </q-card-section>
           <q-card-actions class="q-px-md">
-            <q-btn unelevated color="light-green-7" @click="login" size="lg" class="full-width" label="Register" />
+            <q-btn unelevated color="light-green-7" @click="register" size="lg" class="full-width" label="Register" />
           </q-card-actions>
           <q-card-section class="text-center q-pa-none">
             <p class="text-grey-6">{{gettersTest}}</p>
@@ -27,7 +27,7 @@
 <script>
 import { mapActions, mapGetters, mapState } from 'vuex'
 export default {
-  name: 'Login',
+  name: 'Register',
   data () {
     return {
       email: '',
@@ -40,14 +40,15 @@ export default {
   },
   methods: {
     ...mapActions([
-      'login/actionsTest',
-      'login/testApi'
+      'login/register'
     ]),
-    login () {
+    register () {
       console.log(this.stateTest)
-      const gettersTest = this.gettersTest ? this.gettersTest + '1' : ''
-      this['login/actionsTest']({ test: `hi ${gettersTest}` })
-      this['login/testApi']({ test: `hi ${gettersTest}` })
+      const user = {
+        email: this.email,
+        password: window.btoa(this.password)
+      }
+      this['login/register'](user)
     }
   }
 }
