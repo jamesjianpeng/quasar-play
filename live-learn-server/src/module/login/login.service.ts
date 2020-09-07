@@ -52,9 +52,7 @@ export class LoginService implements OnModuleInit {
     if (!currentUser) {
       return Promise.reject('改用户已经存在')
     }
-    console.log(user.password)
-    user.password = Buffer.from(user.password, 'base64').toString() // 前端 base64 加密的密码，解密，再进行 bcryptjs 加密存储
-    console.log(user.password)
+    user.password = Buffer.from(user.password, 'base64').toString() // 前端通过使用 window.btoa(password) 的方式进行 base64 加密，服务端需要解密再进行 bcryptjs 加密存储
     user.password = await this.hashPassword(user.password)
     this.colUser.insertOne(user)
     return Promise.resolve(user);
@@ -62,9 +60,7 @@ export class LoginService implements OnModuleInit {
 
   protected async hashPassword(password: string): Promise<string> {
     const salt = await genSalt(12);
-    console.log(salt, 'salt')
     const hashedPassword = await hash(password, salt);
-    console.log(hashedPassword, 'password')
     return hashedPassword;
   }
 }
