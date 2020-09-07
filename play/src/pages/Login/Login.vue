@@ -77,14 +77,14 @@ export default {
   },
   methods: {
     ...mapActions([
-      'login/actionsTest',
-      'login/testApi'
+      'login/login'
     ]),
     login () {
-      console.log(this.stateTest)
-      const gettersTest = this.gettersTest ? this.gettersTest + '1' : ''
-      this['login/actionsTest']({ test: `hi ${gettersTest}` })
-      this['login/testApi']({ test: `hi ${gettersTest}` })
+      const user = {
+        email: this.email,
+        password: window.btoa(this.password)
+      }
+      this['login/login'](user)
     }
   }
 }

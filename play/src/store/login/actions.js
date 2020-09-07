@@ -20,6 +20,21 @@ export function register ({ commit }, payload) {
     })
 }
 
+export function login ({ commit }, payload) {
+  return axios.post('/api//auth/login', payload)
+    .then(response => {
+      console.log(response)
+      // setAxiosHeaders(response.data.token)
+    })
+}
+export function logout ({ commit }, payload) {
+  return axios.post('/api//auth/logout', payload)
+    .then(response => {
+      console.log(response)
+      // setAxiosHeaders(response.data.token)
+    })
+}
+
 export function testPrdApi ({ commit }, payload) {
   return axios.get('/prdApi/v1/get/config/tags', payload)
     .then(response => {

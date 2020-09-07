@@ -6,8 +6,8 @@ export class LoginController {
   constructor(private readonly loginService: LoginService) {}
 
   @Post('login')
-  getHello() {
-    return this.loginService.login();
+  login(@Body() user: User) {
+    return this.loginService.login(user);
   }
 
   @Post('/logout')

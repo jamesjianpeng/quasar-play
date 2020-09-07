@@ -36,9 +36,18 @@ export class LoginService implements OnModuleInit {
     return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray(), redis2Value});
   }
 
-  async login() {
-    this.test()
-    return 'Hello World!';
+  async login(user: User) {
+    const { email, password } = user;
+
+    const currentUser = await this.colUser.findOne({ email });
+
+    if (!currentUser) {
+      // throw new Error('User not found');
+      return Promise.reject('该用户不存在');
+    }
+
+    const passwordMatch = await compare(Buffer.from(password, 'base64').toString(), currentUser.password);
+    return passwordMatch;
   }
 
   async logout() {
