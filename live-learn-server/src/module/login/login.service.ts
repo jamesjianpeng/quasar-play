@@ -4,6 +4,8 @@ import { NestjsRdbLibService } from '@smartblog/nestjs-rdb-lib';
 import { User } from 'src/entity/user.entity';
 import { Collection } from 'mongodb';
 import { compare, genSalt, hash } from 'bcryptjs'
+import { UserService } from 'src/module/user/user.service'
+import { IServerResponse } from 'src/core/interface'
 // import { Collection } from 'mongodb';
 @Injectable()
 export class LoginService implements OnModuleInit {
@@ -12,6 +14,7 @@ export class LoginService implements OnModuleInit {
   constructor(
     private nestjsMdbLibService: NestjsMdbLibService,
     private nestjsRdbLibService: NestjsRdbLibService,
+    private userService: UserService,
   ) {}
 
   onModuleInit () {
@@ -23,50 +26,43 @@ export class LoginService implements OnModuleInit {
     this.colUser = await this.nestjsMdbLibService.getCol(data);
   }
 
-  async test() {
-    const data = { cliKey: 'sz', db: 'ghost-live&learn', col: 'subject_sz' };
-
-    const col = await this.nestjsMdbLibService.getCol(data);
-    await col.insertOne({ subject: '数据库概率', code: '02323' });
-
-    const dd = { cliKey: 'hk', db: 'ghost-live&learn', col: 'subject_hk' };
-    const colHk = await this.nestjsMdbLibService.getCol(dd);
-
-    const redis2Value =  await this.nestjsRdbLibService.toPromiseRes({ key: 'sz_2', api: 'get', opt: ['helloKey'] })
-    return Promise.resolve({ hk: await (await colHk.find()).toArray(), sz: await (await col.find()).toArray(), redis2Value});
-  }
-
-  async login(user: User) {
-    const { email, password } = user;
-
-    const currentUser = await this.colUser.findOne({ email });
-
-    if (!currentUser) {
-      // throw new Error('User not found');
-      return Promise.reject('该用户不存在');
-    }
-
-    const passwordMatch = await compare(Buffer.from(password, 'base64').toString(), currentUser.password);
-    return passwordMatch;
+  async login(user: User): Promise<IServerResponse<null>> {
+    let { password } = user;
+    const { data: currentUser } = await this.userService.getUser(user)
+    password = Buffer.from(password, 'base64').toString()
+    const passwordMatch = await compare(password, currentUser.password);
+    return passwordMatch ? { msg: '登陆成功' } : { code: 1, msg: '用户名或者密码错误' };
   }
 
   async logout() {
     return this.nestjsMdbLibService.test();
   }
 
-  async register(user: User) {
+  async register(user: User): Promise<IServerResponse<User | null>> {
     // 注册账号
-    console.log(await( await this.colUser.find()).toArray())
-    const currentUser = this.colUser.findOne({ email: user.email })
-    if (!currentUser) {
-      return Promise.reject('改用户已经存在')
+    let { password } = user
+    password = await this.decryptPassword(password)
+    user.password = await this.hashPassword(password)
+    const { code, msg, data = {} as User } = await this.userService.addUser(user)
+    if (code) {
+      return { code, msg: `${data.email}, ${msg}`, }
     }
-    user.password = Buffer.from(user.password, 'base64').toString() // 前端通过使用 window.btoa(password) 的方式进行 base64 加密，服务端需要解密再进行 bcryptjs 加密存储
-    user.password = await this.hashPassword(user.password)
-    this.colUser.insertOne(user)
-    return Promise.resolve(user);
+    return { msg: '注册成功' }
   }
 
+  /**
+   * @description 由于这个项目实现登陆的密码是通过 前端abot base64 加密的，先解密
+   * @param {string} password
+   */
+  protected async decryptPassword (password: string): Promise<string> {
+    password = Buffer.from(password, 'base64').toString() // 前端通过使用 window.btoa(password) 的方式进行 base64 加密，服务端需要解密再进行 bcryptjs 加密存储
+    return password
+  }
+
+  /**
+   * @description 给密码加盐
+   * @param {string} password
+   */
   protected async hashPassword(password: string): Promise<string> {
     const salt = await genSalt(12);
     const hashedPassword = await hash(password, salt);
