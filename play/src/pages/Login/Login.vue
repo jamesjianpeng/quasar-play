@@ -19,6 +19,11 @@
             <p class="text-grey-6" @click="$router.push('/register')">Not reigistered? Created an Account </p>
           </q-card-section>
           <q-card-section class="text-center q-pa-none">
+          <q-btn round size="sm" color="secondary" @click="showNotif('top-right')">
+            <q-icon name="arrow_forward" class="rotate-135" />
+          </q-btn>
+          </q-card-section>
+          <q-card-section class="text-center q-pa-none">
             <p class="text-grey-6">{{gettersTest}}</p>
           </q-card-section>
         </q-card>
@@ -30,7 +35,14 @@
 <script>
 import { mapActions, mapGetters, mapState } from 'vuex'
 import io from 'socket.io-client'
-
+const alerts = [
+  { color: 'negative', message: 'Woah! Danger! You are getting good at this!', icon: 'report_problem' },
+  { message: 'You need to know about this!', icon: 'warning' },
+  { message: 'Wow! Nice job!', icon: 'thumb_up' },
+  { color: 'teal', message: 'Quasar is cool! Right?', icon: 'tag_faces' },
+  { color: 'purple', message: 'Jim just pinged you', avatar: 'https://cdn.quasar.dev/img/boy-avatar.png' },
+  { multiLine: true, message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quisquam non ad sit assumenda consequuntur esse inventore officia. Corrupti reiciendis impedit vel, fugit odit quisquam quae porro exercitationem eveniet quasi.' }
+]
 export default {
   name: 'Login',
   data () {
@@ -69,9 +81,10 @@ export default {
     socket.on('disconnect', function () {
       console.log('Disconnected')
     })
-    socket.on('toClient', function (data) {
+    socket.on('toClient', (data) => {
       console.log('toClient')
       console.log(data)
+      this.showNotif('top-left', JSON.stringify(data))
       console.log('toClient')
     })
   },
@@ -79,12 +92,46 @@ export default {
     ...mapActions([
       'login/login'
     ]),
-    login () {
+    async login () {
       const user = {
         email: this.email,
         password: window.btoa(this.password)
       }
-      this['login/login'](user)
+      const res = await this['login/login'](user)
+      console.log(res)
+      if (!res.code) {
+        this.showNotif('center', res.msg)
+      }
+    },
+    showNotif (position, message = 'success') {
+      const { color, textColor, multiLine, icon, avatar } = alerts[
+        1
+      // Math.floor(Math.random(alerts.length) * 10) % alerts.length
+      ]
+      const random = 100 // Math.random() * 100
+
+      const twoActions = random > 70
+      const buttonColor = color ? 'white' : '0'
+
+      this.$q.notify({
+        color,
+        textColor,
+        icon: random > 30 ? icon : null,
+        message,
+        position,
+        avatar,
+        multiLine,
+        actions: twoActions
+          ? [
+            { label: 'Reply', color: buttonColor, handler: () => { /* console.log('wooow') */ } },
+            { label: 'Dismiss', color: 'yellow', handler: () => { /* console.log('wooow') */ } }
+          ]
+          : (random > 40
+            ? [{ label: 'Reply', color: buttonColor, handler: () => { /* console.log('wooow') */ } }]
+            : null
+          ),
+        timeout: Math.random() * 5000 + 3000
+      })
     }
   }
 }
