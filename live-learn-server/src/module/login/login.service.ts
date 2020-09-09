@@ -6,6 +6,7 @@ import { Collection } from 'mongodb';
 import { compare, genSalt, hash } from 'bcryptjs'
 import { UserService } from 'src/module/user/user.service'
 import { IServerResponse } from 'src/core/interface'
+import { EventsGateway } from 'src/core/nestjs-websocket-lib/events.gateway'
 // import { Collection } from 'mongodb';
 @Injectable()
 export class LoginService implements OnModuleInit {
@@ -15,6 +16,7 @@ export class LoginService implements OnModuleInit {
     private nestjsMdbLibService: NestjsMdbLibService,
     private nestjsRdbLibService: NestjsRdbLibService,
     private userService: UserService,
+    private eventsGateway: EventsGateway,
   ) {}
 
   onModuleInit () {
@@ -31,6 +33,7 @@ export class LoginService implements OnModuleInit {
     const { data: currentUser } = await this.userService.getUser(user)
     password = Buffer.from(password, 'base64').toString()
     const passwordMatch = await compare(password, currentUser.password);
+    this.eventsGateway.clientServerMap.message.emit('toClient', '登陆成功')
     return passwordMatch ? { msg: '登陆成功' } : { code: 1, msg: '用户名或者密码错误' };
   }
 
