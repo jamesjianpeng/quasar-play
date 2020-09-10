@@ -9,6 +9,7 @@ import { NestjsLoggerLibService } from './nestjs-logger-lib';
 import { ScheduleModule } from '@nestjs/schedule';
 import { EventsModule } from './nestjs-websocket-lib/event.module';
 import { createLogFileLocation } from './utils'
+import { MapperService } from './mapper.service'
 
 @Global()
 @Module({
@@ -32,13 +33,15 @@ import { createLogFileLocation } from './utils'
     // 为了在 interceptor 中使用依赖注入的方式使用其他的 sercice 需要写成 prociders
     { provide: APP_INTERCEPTOR, useClass: LoggingInterceptor },
     NestjsLoggerLibService,
+    MapperService
   ],
   exports: [
     NestjsMdbLibModule,
     NestjsRdbLibModule,
     NestjsWinstonLoggintLibModule,
-    NestjsLoggerLibService,
     EventsModule,
+    NestjsLoggerLibService,
+    MapperService
   ],
 })
 export class CommonModule {}
